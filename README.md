@@ -292,6 +292,9 @@ docker-compose一键部署：https://doc.crmeb.com/single_open/open_v54/20145
 #### 技术社区！找方法、提bug、看官方消息、拿活跃大奖！都在 <a href="https://www.crmeb.com/ask/?from=githubphp" target="_blank">CRMEB 技术社区</a> 应有尽有
 
 
+###  📕 CRMEB 多商户版
+<a href="https://www.crmeb.com/index/merchant?from=giteephp"><img width="3840" height="1600" alt="duoshanghu2" src="https://github.com/user-attachments/assets/041dbbf2-faa2-40bc-be58-b9cd8a00efd4" /></a>
+
 
 
 ---
