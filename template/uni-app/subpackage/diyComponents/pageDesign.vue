@@ -546,7 +546,12 @@ export default {
         this.bgColor = data.color_picker;
       }
       if (data.is_bg_pic) {
-        this.bgPic = data.bg_pic;
+        let bgPic = data.bg_pic || "";
+        // 拼接图片完整URL
+        if (bgPic && !bgPic.startsWith('http')) {
+          bgPic = HTTP_REQUEST_URL + bgPic;
+        }
+        this.bgPic = bgPic;
         this.bgTabVal = data.bg_tab_val;
       }
 

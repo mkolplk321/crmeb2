@@ -859,6 +859,7 @@ import { getCartCounts } from "@/api/order.js";
 import { goShopDetail } from "@/libs/order.js";
 import productWindow from "@/components/productWindow";
 import commonWrapper from "./commonWrapper.vue";
+import { HTTP_REQUEST_URL } from "@/config/app";
 export default {
   name: "goodList",
   components: {
@@ -904,7 +905,16 @@ export default {
   watch: {
     list: {
       handler(val) {
-        if (val && val.length) this.tempArr = val;
+        if (val && val.length) {
+          // 拼接商品图片完整URL
+          let data = val.map(item => {
+            if (item.image && !item.image.startsWith('http')) {
+              item.image = HTTP_REQUEST_URL + item.image;
+            }
+            return item;
+          });
+          this.tempArr = data;
+        }
       },
       deep: true,
     },
@@ -1262,7 +1272,14 @@ export default {
         };
       }
       getProductslist(data).then((res) => {
-        this.tempArr = res.data;
+        // 拼接商品图片完整URL
+        let newData = res.data.map(item => {
+          if (item.image && !item.image.startsWith('http')) {
+            item.image = HTTP_REQUEST_URL + item.image;
+          }
+          return item;
+        });
+        this.tempArr = newData;
       });
     },
     goDetail(item) {

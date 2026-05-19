@@ -112,42 +112,42 @@ export default {
           name: "服务预约",
           sub: "预约骑行 We服务",
           image: "/static/images/icon-reservation.png",
-          url: "/pages/reservation/list",
+          url: "/pages/goods_details/index?id=11",
           type: "navigateTo",
         },
         {
           name: "RETUL FIT",
           sub: "Fitting 服务预约",
           image: "/static/images/icon-fit.png",
-          url: "/pages/goods/list?type=fit",
+          url: "/pages/goods_details/index?id=14",
           type: "navigateTo",
         },
         {
           name: "试骑体验",
           sub: "Demo Bike",
-          image: "/static/images/Bicycle_test_ride_experience_c_2026-05-19T13-31-00.png",
-          url: "/pages/goods/list?type=test",
+          image: "/static/images/icon-test.png",
+          url: "/pages/goods_details/index?id=17",
           type: "navigateTo",
         },
         {
           name: "门店服务",
           sub: "Store Service",
           image: "/static/images/icon-store.png",
-          url: "/pages/store/list",
+          url: "/pages/annex/special/index?theme_id=5",
           type: "navigateTo",
         },
         {
           name: "轮回周边",
           sub: "The Cyclist Club",
-          image: "/static/images/Cycling_merchandise_and_access_2026-05-19T13-31-44.png",
-          url: "/pages/goods/list?type=goods",
+          image: "/static/images/icon-goods.png",
+          url: "/pages/goods_details/index?id=12",
           type: "navigateTo",
         },
         {
           name: "关于我们",
           sub: "About Us...",
           image: "/static/images/icon-about.png",
-          url: "/pages/annex/about",
+          url: "/pages/annex/special/index?theme_id=17",
           type: "navigateTo",
         },
       ],
@@ -243,11 +243,18 @@ export default {
     },
     // 跳转活动列表
     goActivityList(type) {
-      // 通过缓存传递筛选类型
-      uni.setStorageSync('goodsFilterType', type);
-      uni.switchTab({
-        url: '/pages/goods_list/index',
-      });
+      // 跳转到专题页面
+      if (type === 'riding') {
+        // 轮回特色骑行活动 -> id=20的专题页面
+        uni.navigateTo({
+          url: '/pages/annex/special/index?theme_id=20',
+        });
+      } else if (type === 'race') {
+        // 赛事报名 -> id=22的专题页面
+        uni.navigateTo({
+          url: '/pages/annex/special/index?theme_id=22',
+        });
+      }
     },
     // 跳转功能页面
     goPage(item) {

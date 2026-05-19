@@ -185,7 +185,7 @@ export default {
       styleConfig: [],
       loading: false,
       loadend: false,
-      loadTitle: "下拉加载更多", //提示语
+      loadTitle: "下拉加载更多",
       page: 1,
       limit: this.$config.LIMIT,
       numConfig: 0,
@@ -213,7 +213,7 @@ export default {
       isFixed: false,
       // #endif
       site_config: "",
-      errorNetwork: false, // 是否断网
+      errorNetwork: false,
       isHeaderSerch: false,
       showHomeComb: false,
       showCateNav: false,
@@ -233,7 +233,7 @@ export default {
       confirm_video_status: false,
       positionTop: 0,
       isFooter: false,
-      pdHeight: 0, //自定义底部导航上下边距和
+      pdHeight: 0,
       entryData: {
         store_id: "",
         latitude: "",
@@ -242,8 +242,8 @@ export default {
       },
       goodsIndex: [],
       promotionIndex: [],
-      belongIndex: 0, // 进店规则归属门店排序位置；
-      isBelongStore: false, //判断是否为归属门店；
+      belongIndex: 0,
+      isBelongStore: false,
       getHeight: this.$util.getWXStatusHeight(),
       myApplet: true,
       configData: Cache.get("BASIC_CONFIG"),
@@ -254,8 +254,8 @@ export default {
   },
   onLoad(options) {
     let that = this;
-    uni.hideTabBar();
     that.getOptions(options);
+    this.themeId = 20; // 固定使用 id=20 的专题
     this.$nextTick(function () {
       uni.getSystemInfo({
         success: function (res) {
@@ -263,16 +263,7 @@ export default {
         },
       });
     });
-    const { state, scope } = options;
-    let themeId = options.theme_id;
-    // #ifdef MP
-    if (options.scene) {
-      let value = this.$util.getUrlParams(decodeURIComponent(options.scene));
-      if (value.theme_id) themeId = value.theme_id;
-    }
-    // #endif
-
-    if (themeId) this.themeId = themeId;
+    
     this.diyData();
     // #ifdef H5
     this.setOpenShare();
@@ -300,7 +291,6 @@ export default {
         content: "当前使用移动网络，是否继续播放视频？",
         success: (res) => {
           if (res.confirm) {
-            // 监听
             this.SET_AUTOPLAY(true);
             this.$eventHub.$emit("product_video_observe");
           }
@@ -309,14 +299,12 @@ export default {
     });
   },
   onUnload() {
-    // 清除监听
     uni.$off("activeFn");
   },
   watch: {
     isLogin: {
-      deep: true, //深度监听设置为 true
+      deep: true,
       handler: function (newV, oldV) {
-        // 优惠券弹窗
         var newDates = new Date().toLocaleDateString();
         if (newV) {
           try {
@@ -331,7 +319,6 @@ export default {
   },
   onShow() {
     uni.removeStorageSync("form_type_cart");
-    // 优惠券弹窗
     if (this.isLogin) {
       this.getCoupon();
       this.getCartNum();
@@ -422,13 +409,11 @@ export default {
       // #ifdef MP
       if (options.scene) {
         let value = that.$util.getUrlParams(decodeURIComponent(options.scene));
-        //记录推广人uid
         if (value.spid) app.globalData.spid = value.spid;
       }
       // #endif
       if (options.spid) app.globalData.spid = options.spid;
     },
-    // 重新链接
     reconnect() {
       this.diyData();
       getShare().then((res) => {
@@ -454,7 +439,6 @@ export default {
       uni.hideLoading();
       this.domOffsetTop = data.top;
     },
-    // 去商品详情
     goGoodsDetail(item) {
       goShopDetail(item, this.uid).then((res) => {
         uni.navigateTo({
@@ -462,7 +446,6 @@ export default {
         });
       });
     },
-    // 分类点击
     changeSort(item, index) {
       if (this.curSort == index) return;
       this.curSort = index;
@@ -472,12 +455,6 @@ export default {
       this.loaded = false;
       this.getGoodsList();
     },
-    /**
-			 * @param data {
-				classPage: 0 分类id
-				microPage: 0 微页面id
-				type: 1   0 微页面 1 商品分类
-			 }*/
     bindSortId(data) {
       if (data.dataType.tabVal == 1) {
         uni.navigateTo({
@@ -493,11 +470,6 @@ export default {
         });
       }
     },
-    /**
-     * 获取DIY
-     * @param {number} id
-     * @param {boolean} type 区分是否是微页面
-     */
     getMicroPage(id, type) {
       let that = this;
       that.styleConfig = [];
@@ -508,7 +480,6 @@ export default {
         .then((res) => {
           uni.hideLoading();
           let data = res.data;
-          // 过滤掉 headerSerch 和 homeComb，确保 PageDesign 不渲染它们
           if (data && data.value) {
             let valueObj = data.value;
             for (let key in valueObj) {
@@ -521,7 +492,6 @@ export default {
             }
           }
           this.currentDiyData = data;
-
           this.setDiyData(res.data);
         })
         .catch((err) => {
@@ -549,6 +519,15 @@ export default {
         });
       } else {
         getCategoryList().then((res) => {
+          res.data.forEach(cate => {
+            if (cate.children) {
+              cate.children.forEach(child => {
+                if (child.pic && !child.pic.startsWith('http')) {
+                  child.pic = HTTP_REQUEST_URL + child.pic;
+                }
+              });
+            }
+          });
           this.sortAll = res.data;
           res.data.forEach((el, index) => {
             if (el.id == data) {
@@ -558,14 +537,12 @@ export default {
           });
           this.goodList = [];
           this.goodPage = 1;
-
           this.$nextTick(() => {
             if (this.sortList != "") this.getGoodsList();
           });
         });
       }
     },
-    // 商品列表
     getGoodsList() {
       if (this.loading || this.loaded) return;
       this.loading = true;
@@ -582,10 +559,15 @@ export default {
         this.loading = false;
         this.loaded = res.data.length < 10;
         this.goodPage++;
-        this.goodList = this.goodList.concat(res.data);
+        let newData = res.data.map(item => {
+          if (item.image && !item.image.startsWith('http')) {
+            item.image = HTTP_REQUEST_URL + item.image;
+          }
+          return item;
+        });
+        this.goodList = this.goodList.concat(newData);
       });
     },
-    // 新用户优惠券
     getNewCoupon() {
       const oldUser = uni.getStorageSync("oldUser") || 0;
       if (!oldUser) {
@@ -603,7 +585,6 @@ export default {
         });
       }
     },
-    // 优惠券弹窗
     getCoupon() {
       const tagDate = uni.getStorageSync("tagDate") || "",
         nowDate = new Date().toLocaleDateString();
@@ -622,7 +603,6 @@ export default {
         });
       }
     },
-    // 优惠券弹窗关闭
     couponClose() {
       this.isCouponShow = false;
       if (!uni.getStorageSync("oldUser")) {
@@ -632,23 +612,6 @@ export default {
     onLoadFun() {
       this.isShowAuth = false;
     },
-    // #ifdef H5
-    // 获取url后面的参数
-    getQueryString(name) {
-      var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
-      var reg_rewrite = new RegExp("(^|/)" + name + "/([^/]*)(/|$)", "i");
-      var r = window.location.search.substr(1).match(reg);
-      var q = window.location.pathname.substr(1).match(reg_rewrite);
-      if (r != null) {
-        return unescape(r[2]);
-      } else if (q != null) {
-        return unescape(q[2]);
-      } else {
-        return null;
-      }
-    },
-    // #endif
-
     // #ifdef MP
     getTempIds() {
       let messageTmplIds = wx.getStorageSync(SUBSCRIBE_MESSAGE);
@@ -660,7 +623,6 @@ export default {
       }
     },
     // #endif
-    // 对象转数组
     objToArr(data) {
       if (!data || typeof data !== "object") return [];
       let obj = Object.keys(data).sort();
@@ -675,7 +637,11 @@ export default {
         this.bgColor = data.color_picker || "";
       }
       if (data.is_bg_pic) {
-        this.bgPic = data.bg_pic || "";
+        let bgPic = data.bg_pic || "";
+        if (bgPic && !bgPic.startsWith('http')) {
+          bgPic = HTTP_REQUEST_URL + bgPic;
+        }
+        this.bgPic = bgPic;
         this.bgTabVal = data.bg_tab_val || "";
       }
       this.pageShow = 1;
@@ -759,19 +725,6 @@ export default {
         });
     },
     diyData() {
-      // let diyData = uni.getStorageSync('diyData');
-      // if (diyData) {
-      // 	getDiyVersion(0).then((res) => {
-      // 		let diyVersion = uni.getStorageSync('diyVersion');
-      // 		if (res.data.version + '0' === diyVersion) {
-      // 			this.setDiyData(JSON.parse(diyData));
-      // 		} else {
-      // 			uni.setStorageSync('diyVersion', res.data.version + '0');
-      // 			this.getDiyData();
-      // 		}
-      // 	});
-      // } else {
-      // }
       this.getDiyData();
     },
 
@@ -802,7 +755,6 @@ export default {
       this.pdHeight = num;
     },
     // #ifdef H5
-    // 微信分享；
     setOpenShare: function () {
       let that = this;
       let uid = this.uid ? this.uid : 0;
@@ -874,12 +826,9 @@ export default {
       return {
         title: this.shareInfo.title,
         path: "/pages/index/index?spid=" + uid,
-        // imageUrl: this.shareInfo.img,
-        // desc: this.shareInfo.synopsis
       };
     }
   },
-  //分享到朋友圈
   onShareTimeline: function () {
     return {
       title: this.shareInfo.title,
@@ -894,7 +843,6 @@ export default {
 
 <style lang="scss">
 .page {
-  // padding-bottom: 50px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -951,7 +899,7 @@ export default {
 
   .title {
     position: relative;
-    top: -40rpx;
+    top: -40px;
     font-size: 32rpx;
     color: #666;
   }

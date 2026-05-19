@@ -855,6 +855,20 @@ export default {
           let storeInfo = res.data.storeInfo;
           let good_list = res.data.good_list || [];
           this.is_gift = res.data.storeInfo.is_gift;
+          
+          // 拼接图片完整URL
+          if (storeInfo.image && !storeInfo.image.startsWith('http')) {
+            storeInfo.image = HTTP_REQUEST_URL + storeInfo.image;
+          }
+          if (storeInfo.slider_image && Array.isArray(storeInfo.slider_image)) {
+            storeInfo.slider_image = storeInfo.slider_image.map(img => {
+              return img && !img.startsWith('http') ? HTTP_REQUEST_URL + img : img;
+            });
+          }
+          if (storeInfo.small_image && !storeInfo.small_image.startsWith('http')) {
+            storeInfo.small_image = HTTP_REQUEST_URL + storeInfo.small_image;
+          }
+          
           that.$set(that, "storeInfo", storeInfo);
           that.$set(
             that,
@@ -912,6 +926,10 @@ export default {
           });
           for (let key in res.data.productValue) {
             let obj = res.data.productValue[key];
+            // 拼接SKU图片完整URL
+            if (obj.image && !obj.image.startsWith('http')) {
+              obj.image = HTTP_REQUEST_URL + obj.image;
+            }
             that.skuArr.push(obj);
           }
           this.$set(this, "selectSku", that.skuArr[0]);
