@@ -145,6 +145,7 @@ import { openOrderSubscribe } from '@/utils/SubscribeMessage.js';
 import home from '@/components/home';
 import { toLogin } from '@/libs/login.js';
 import { mapGetters } from 'vuex';
+import { HTTP_REQUEST_URL } from '@/config/app';
 // #ifdef MP
 import authorize from '@/components/Authorize';
 // #endif
@@ -356,15 +357,25 @@ export default {
 				limit: that.limit
 			})
 				.then((res) => {
-					let list = res.data || [];
-					let loadend = list.length < that.limit;
-					that.orderList = that.$util.SplitArray(list, that.orderList);
-					that.$set(that, 'orderList', that.orderList);
-					that.loadend = loadend;
-					that.loading = false;
-					that.loadTitle = loadend ? that.$t(`没有更多内容啦~`) : that.$t(`加载更多`);
-					that.page = that.page + 1;
-				})
+				let list = res.data || [];
+				// 拼接商品图片完整URL
+				list.forEach(order => {
+					if (order.cartInfo) {
+						order.cartInfo.forEach(cart => {
+							if (cart.productInfo && cart.productInfo.image && !cart.productInfo.image.startsWith('http')) {
+								cart.productInfo.image = HTTP_REQUEST_URL + cart.productInfo.image;
+							}
+						});
+					}
+				});
+				let loadend = list.length < that.limit;
+				that.orderList = that.$util.SplitArray(list, that.orderList);
+				that.$set(that, 'orderList', that.orderList);
+				that.loadend = loadend;
+				that.loading = false;
+				that.loadTitle = loadend ? that.$t(`没有更多内容啦~`) : that.$t(`加载更多`);
+				that.page = that.page + 1;
+			})
 				.catch((err) => {
 					that.loading = false;
 					that.loadTitle = that.$t(`加载更多`);

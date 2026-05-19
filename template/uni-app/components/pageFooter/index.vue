@@ -171,19 +171,16 @@ export default {
     setNavigationInfo(data) {
       if (this.isTabBar) {
         this.newData = data;
-        this.showTabBar = data.effectConfig.tabVal;
+        // 始终使用原生 tabBar，禁用自定义 tabBar
+        this.showTabBar = false;
         let pdHeight = data.topConfig.val + data.bottomConfig.val;
         this.$emit(
           "newDataStatus",
-          data.effectConfig.tabVal,
+          0,
           pdHeight,
           data.mbConfig.val,
         );
-        if (data.effectConfig.tabVal) {
-          uni.hideTabBar();
-        } else {
-          uni.showTabBar();
-        }
+        uni.showTabBar();
       }
     },
     getNavigationInfo() {

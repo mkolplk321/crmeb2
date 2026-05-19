@@ -191,7 +191,6 @@ export default {
     };
   },
   onLoad(option) {
-    uni.hideTabBar();
     let that = this;
     // #ifdef MP
     // 小程序静默授权
