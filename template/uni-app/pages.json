@@ -74,6 +74,35 @@
 				}
 
 			}
+		},
+		{
+			"path": "pages/goods_list/index",
+			"style": {
+				"navigationBarTitleText": "活动"
+			}
+		},
+		{
+			"path": "pages/index/star",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/reservation/list",
+			"style": {
+				"navigationBarTitleText": "预约",
+				"app-plus": {
+					// #ifdef APP-PLUS
+					"titleNView": {
+						"type": "default"
+					}
+					// #endif
+				}
+			}
 		}
 
 	],
@@ -1040,13 +1069,7 @@
 					}
 				}
 				// #endif
-			],
-			"plugins": {
-				"live-player-plugin": {
-					"version": "1.3.5",
-					"provider": "wx2b03c6e691cd7370"
-				}
-			}
+			]
 		},
 		
 		{
@@ -1719,33 +1742,40 @@
 		}	
 
 	],
-	"tabBar": { // 底部菜单
-		"color": "#282828",
-		"selectedColor": "#ff3366",
-		"borderStyle": "white",
-		"backgroundColor": "#ffffff",
-		"list": [{
+	"tabBar": { // 底部菜单 - 轮回自行车Club小程序
+		"color": "#666666",
+		"selectedColor": "#333333",
+		"borderStyle": "black",
+		"backgroundColor": "#f8f8f8",
+		"list": [
+			{
 				"pagePath": "pages/index/index",
-				"iconPath": "static/images/1-001.png",
-				"selectedIconPath": "static/images/1-002.png",
+				"iconPath": "static/images/tabbar/home.png",
+				"selectedIconPath": "static/images/tabbar/home-active.png",
 				"text": "首页"
 			},
 			{
-				"pagePath": "pages/goods_cate/goods_cate",
-				"iconPath": "static/images/2-001.png",
-				"selectedIconPath": "static/images/2-002.png",
-				"text": "分类"
+				"pagePath": "pages/goods_list/index",
+				"iconPath": "static/images/tabbar/activity.png",
+				"selectedIconPath": "static/images/tabbar/activity-active.png",
+				"text": "活动"
 			},
 			{
-				"pagePath": "pages/order_addcart/order_addcart",
-				"iconPath": "static/images/3-001.png",
-				"selectedIconPath": "static/images/3-002.png",
-				"text": "购物车"
+				"pagePath": "pages/index/star",
+				"iconPath": "static/images/tabbar/star.png",
+				"selectedIconPath": "static/images/tabbar/star-active.png",
+				"text": ""
+			},
+			{
+				"pagePath": "pages/reservation/list",
+				"iconPath": "static/images/tabbar/reserve.png",
+				"selectedIconPath": "static/images/tabbar/reserve-active.png",
+				"text": "预约"
 			},
 			{
 				"pagePath": "pages/user/index",
-				"iconPath": "static/images/4-001.png",
-				"selectedIconPath": "static/images/4-002.png",
+				"iconPath": "static/images/tabbar/user.png",
+				"selectedIconPath": "static/images/tabbar/user-active.png",
 				"text": "我的"
 			}
 		]
