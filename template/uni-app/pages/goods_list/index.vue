@@ -10,7 +10,7 @@
           <image src="/static/images/banner-race.jpg" mode="aspectFill"></image>
         </view>
         <view class="card-content">
-          <view class="card-title">轮回特色骑行活动</view>
+          <view class="card-title">闪电特色骑行活动</view>
           <view class="card-desc">九条·黄贡椒山水之旅、骑行·美食的盛宴</view>
           <view class="card-btn">即刻探索</view>
         </view>
@@ -20,7 +20,7 @@
           <image src="/static/images/banner-race.jpg" mode="aspectFill"></image>
         </view>
         <view class="card-content">
-          <view class="card-title">轮回赛事报名</view>
+          <view class="card-title">闪电赛事报名</view>
           <view class="card-desc">山马&公路赛、更精彩</view>
           <view class="card-btn">即刻探索</view>
         </view>
@@ -48,7 +48,7 @@ export default {
         { title: 'RETUL FIT', subtitle: 'Fitting提升体验', image: '/static/images/icon-fit.png', page: '' },
         { title: '试骑体验', subtitle: 'Demo Day', image: '/static/images/icon-test.png', page: '' },
         { title: '门店服务', subtitle: 'Retail Services', image: '/static/images/icon-store.png', page: '' },
-        { title: '轮回周边', subtitle: 'The Cycles Club', image: '/static/images/icon-goods.png', page: '' },
+        { title: '闪电周边', subtitle: 'The Cycles Club', image: '/static/images/icon-goods.png', page: '' },
         { title: '关于我们', subtitle: 'About Us', image: '/static/images/icon-about.png', page: '' }
       ]
     }

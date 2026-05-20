@@ -1,5 +1,5 @@
 <template>
-  <!-- 轮回自行车 Club 首页 -->
+  <!-- 闪电自行车 Club 首页 -->
   <view class="page" :style="{ minHeight: windowHeight + 'px' }">
     <!-- 全屏背景图（延伸到页面底部，底部渐变为白色） -->
     <view class="full-bg-wrap" :style="{ paddingTop: statusBarHeight + 'px' }">
@@ -17,12 +17,12 @@
           </view>
           <view class="activity-cards">
             <view class="activity-card" @click="goActivityList('riding')">
-              <text class="activity-card-name">轮回特色骑行活动</text>
+              <text class="activity-card-name">闪电特色骑行活动</text>
               <text class="activity-card-desc">探索人文与自然，享受骑行无界限</text>
               <view class="activity-card-btn">即刻探索</view>
             </view>
             <view class="activity-card" @click="goActivityList('race')">
-              <text class="activity-card-name">轮回赛事报名</text>
+              <text class="activity-card-name">闪电赛事报名</text>
               <text class="activity-card-desc">山川大地皆赛场，挑战永不停</text>
               <view class="activity-card-btn">即刻探索</view>
             </view>
@@ -137,7 +137,7 @@ export default {
           type: "navigateTo",
         },
         {
-          name: "轮回周边",
+          name: "闪电周边",
           sub: "The Cyclist Club",
           image: "/static/images/icon-goods.png",
           url: "/pages/goods_details/index?id=12",
@@ -245,7 +245,7 @@ export default {
     goActivityList(type) {
       // 跳转到专题页面
       if (type === 'riding') {
-        // 轮回特色骑行活动 -> id=20的专题页面
+        // 闪电特色骑行活动 -> id=20的专题页面
         uni.navigateTo({
           url: '/pages/annex/special/index?theme_id=20',
         });
@@ -387,21 +387,21 @@ export default {
     let uid = this.uid ? this.uid : 0;
     if (this.shareInfo.img) {
       return {
-        title: this.shareInfo.title || "轮回自行车 Club",
+        title: this.shareInfo.title || "闪电自行车 Club",
         path: "/pages/index/index?spid=" + uid,
         imageUrl: this.shareInfo.img,
         desc: this.shareInfo.synopsis,
       };
     } else {
       return {
-        title: this.shareInfo.title || "轮回自行车 Club",
+        title: this.shareInfo.title || "闪电自行车 Club",
         path: "/pages/index/index?spid=" + uid,
       };
     }
   },
   onShareTimeline: function () {
     return {
-      title: this.shareInfo.title || "轮回自行车 Club",
+      title: this.shareInfo.title || "闪电自行车 Club",
       path: "/pages/index/index",
       imageUrl: this.shareInfo.img,
     };

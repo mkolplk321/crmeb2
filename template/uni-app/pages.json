@@ -1748,7 +1748,7 @@
 		}	
 
 	],
-	"tabBar": { // 底部菜单 - 轮回自行车Club小程序
+	"tabBar": { // 底部菜单 - 闪电自行车Club小程序
 		"color": "#666666",
 		"selectedColor": "#333333",
 		"borderStyle": "black",
