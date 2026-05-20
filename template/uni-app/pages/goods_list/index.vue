@@ -1,13 +1,13 @@
 <template>
   <view class="page">
     <view class="header">
-      <image class="banner" src="/static/images/banner-cycling.jpg" mode="aspectFill"></image>
+      <image class="banner" src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/banner-cycling.jpg" mode="aspectFill"></image>
     </view>
     <view class="section-title">活动报名</view>
     <view class="activity-cards">
       <view class="card" @click="goActivity('riding')">
         <view class="card-bg">
-          <image src="/static/images/banner-race.jpg" mode="aspectFill"></image>
+          <image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/banner-race.jpg" mode="aspectFill"></image>
         </view>
         <view class="card-content">
           <view class="card-title">闪电特色骑行活动</view>
@@ -17,7 +17,7 @@
       </view>
       <view class="card" @click="goActivity('race')">
         <view class="card-bg">
-          <image src="/static/images/banner-race.jpg" mode="aspectFill"></image>
+          <image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/banner-race.jpg" mode="aspectFill"></image>
         </view>
         <view class="card-content">
           <view class="card-title">闪电赛事报名</view>
@@ -34,7 +34,7 @@
       </view>
     </view>
     <view class="footer-logo">
-      <image src="/static/images/brand-logo.png" mode="aspectFit"></image>
+      <image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/brand-logo.png" mode="aspectFit"></image>
     </view>
   </view>
 </template>
@@ -44,12 +44,12 @@ export default {
   data() {
     return {
       gridList: [
-        { title: '服务预约', subtitle: '贴心好服务 轻松搞定', image: '/static/images/icon-reservation.jpg', page: '' },
-        { title: 'RETUL FIT', subtitle: 'Fitting提升体验', image: '/static/images/icon-fit.jpg', page: '' },
-        { title: '试骑体验', subtitle: 'Demo Day', image: '/static/images/icon-test.jpg', page: '' },
-        { title: '门店服务', subtitle: 'Retail Services', image: '/static/images/icon-store.jpg', page: '' },
-        { title: '闪电周边', subtitle: 'The Cycles Club', image: '/static/images/icon-goods.jpg', page: '' },
-        { title: '关于我们', subtitle: 'About Us', image: '/static/images/icon-about.jpg', page: '' }
+        { title: '服务预约', subtitle: '贴心好服务 轻松搞定', image: 'https://goyoto.oss-cn-beijing.aliyuncs.com/images/icon-reservation.jpg', page: '' },
+        { title: 'RETUL FIT', subtitle: 'Fitting提升体验', image: 'https://goyoto.oss-cn-beijing.aliyuncs.com/images/icon-fit.jpg', page: '' },
+        { title: '试骑体验', subtitle: 'Demo Day', image: 'https://goyoto.oss-cn-beijing.aliyuncs.com/images/icon-test.jpg', page: '' },
+        { title: '门店服务', subtitle: 'Retail Services', image: 'https://goyoto.oss-cn-beijing.aliyuncs.com/images/icon-store.jpg', page: '' },
+        { title: '闪电周边', subtitle: 'The Cycles Club', image: 'https://goyoto.oss-cn-beijing.aliyuncs.com/images/icon-goods.jpg', page: '' },
+        { title: '关于我们', subtitle: 'About Us', image: 'https://goyoto.oss-cn-beijing.aliyuncs.com/images/icon-about.jpg', page: '' }
       ]
     }
   },

@@ -1,7 +1,7 @@
 <template>
 	<view :style="colorStyle">
 		<view class='member-center'>
-			<image class="bag" src="../../../static/images/jf-head.png" mode=""></image>
+			<image class="bag" src="../../..https://goyoto.oss-cn-beijing.aliyuncs.com/images/jf-head.png" mode=""></image>
 			<view class='header'>
 				<swiper class="swiper" :current="swiperIndex" previous-margin="55rpx" next-margin="55rpx"
 					@change="swiperChange">

@@ -199,7 +199,7 @@
       <!-- 海报展示 -->
       <view class="poster-pop" v-if="posterImageStatus">
         <image
-          src="../../static/images/poster-close.png"
+          src="../..https://goyoto.oss-cn-beijing.aliyuncs.com/images/poster-close.png"
           class="close"
           @click="posterImageClose"
         ></image>
@@ -365,7 +365,7 @@ export default {
       PromotionCode: "", //二维码图片
       canvasStatus: false, //海报绘图标签
       posterImage: "", //海报路径
-      posterbackgd: "/static/images/posterbackgd.png",
+      posterbackgd: "https://goyoto.oss-cn-beijing.aliyuncs.com/images/posterbackgd.png",
       sharePacket: {
         isState: true, //默认不显示
       }, //分销商详细

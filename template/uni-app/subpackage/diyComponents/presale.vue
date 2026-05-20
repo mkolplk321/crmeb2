@@ -89,7 +89,7 @@
                 >
                 <image
                   class="shandian"
-                  src="@/static/images/presale.png"
+                  src="@https://goyoto.oss-cn-beijing.aliyuncs.com/images/presale.png"
                 ></image>
               </view>
             </view>

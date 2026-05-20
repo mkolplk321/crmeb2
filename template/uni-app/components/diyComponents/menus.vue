@@ -53,7 +53,7 @@
                   ></easy-loadimage>
                   <view class="list-empty-box" v-else>
                     <image
-                      src="/static/images/shan.png"
+                      src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/shan.png"
                       mode="aspectFill"
                     ></image>
                   </view>
@@ -94,7 +94,7 @@
                     ></easy-loadimage>
                     <view class="list-empty-box" v-else>
                       <image
-                        src="/static/images/shan.png"
+                        src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/shan.png"
                         mode="aspectFill"
                       ></image>
                     </view>

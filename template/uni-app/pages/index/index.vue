@@ -3,7 +3,7 @@
   <view class="page" :style="{ minHeight: windowHeight + 'px' }">
     <!-- 全屏背景图（延伸到页面底部，底部渐变为白色） -->
     <view class="full-bg-wrap" :style="{ paddingTop: statusBarHeight + 'px' }">
-      <image class="full-bg-img" src="/static/images/banner-bg.jpg" mode="aspectFill"></image>
+      <image class="full-bg-img" src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/banner-bg.jpg" mode="aspectFill"></image>
       <view class="full-fade"></view>
     </view>
 
@@ -45,7 +45,7 @@
         <!-- 底部品牌区域 -->
         <view class="footer-section">
           <view class="brand-logo">
-            <image class="logo-image" src="/static/images/brand-logo.jpg" mode="aspectFit"></image>
+            <image class="logo-image" src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/brand-logo.jpg" mode="aspectFit"></image>
           </view>
           <view class="brand-name">闪电自行车 Club</view>
           <view class="copyright">© 2026 闪电自行车 Club All Rights Reserved</view>
@@ -65,7 +65,7 @@
       {{ configData.record_No }}
     </view>
     <view class="site-config" v-if="configData && configData.network_security" @click="goICP(configData.network_security_url)">
-      <image class="ban" src="/static/images/beian.png" alt="" />
+      <image class="ban" src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/beian.png" alt="" />
       {{ configData.network_security }}
     </view>
 
@@ -103,50 +103,50 @@ export default {
       windowHeight: 0,
       bannerList: [
         // 默认轮播图，实际从API获取
-        { pic: "/static/images/banner-brand.jpg", link: "" },
-        { pic: "/static/images/banner-cycling.jpg", link: "" },
-        { pic: "/static/images/banner-race.jpg", link: "" },
+        { pic: "https://goyoto.oss-cn-beijing.aliyuncs.com/images/banner-brand.jpg", link: "" },
+        { pic: "https://goyoto.oss-cn-beijing.aliyuncs.com/images/banner-cycling.jpg", link: "" },
+        { pic: "https://goyoto.oss-cn-beijing.aliyuncs.com/images/banner-race.jpg", link: "" },
       ],
       gridList: [
         {
           name: "服务预约",
           sub: "预约骑行 We服务",
-          image: "/static/images/icon-reservation.jpg",
+          image: "https://goyoto.oss-cn-beijing.aliyuncs.com/images/icon-reservation.jpg",
           url: "/pages/goods_details/index?id=11",
           type: "navigateTo",
         },
         {
           name: "RETUL FIT",
           sub: "Fitting 服务预约",
-          image: "/static/images/icon-fit.jpg",
+          image: "https://goyoto.oss-cn-beijing.aliyuncs.com/images/icon-fit.jpg",
           url: "/pages/goods_details/index?id=14",
           type: "navigateTo",
         },
         {
           name: "试骑体验",
           sub: "Demo Bike",
-          image: "/static/images/icon-test.jpg",
+          image: "https://goyoto.oss-cn-beijing.aliyuncs.com/images/icon-test.jpg",
           url: "/pages/goods_details/index?id=17",
           type: "navigateTo",
         },
         {
           name: "门店服务",
           sub: "Store Service",
-          image: "/static/images/icon-store.jpg",
+          image: "https://goyoto.oss-cn-beijing.aliyuncs.com/images/icon-store.jpg",
           url: "/pages/annex/special/index?theme_id=5",
           type: "navigateTo",
         },
         {
           name: "闪电周边",
           sub: "The Cyclist Club",
-          image: "/static/images/icon-goods.jpg",
+          image: "https://goyoto.oss-cn-beijing.aliyuncs.com/images/icon-goods.jpg",
           url: "/pages/goods_details/index?id=12",
           type: "navigateTo",
         },
         {
           name: "关于我们",
           sub: "About Us...",
-          image: "/static/images/icon-about.jpg",
+          image: "https://goyoto.oss-cn-beijing.aliyuncs.com/images/icon-about.jpg",
           url: "/pages/annex/special/index?theme_id=17",
           type: "navigateTo",
         },
@@ -277,7 +277,7 @@ export default {
           let data = res.data;
           uni.setStorageSync("wechatStatus", data.wechat_status);
           if (!data.copyrightContext && !data.copyrightImage) {
-            data.copyrightImage = "/static/images/support.png";
+            data.copyrightImage = "https://goyoto.oss-cn-beijing.aliyuncs.com/images/support.png";
           }
           uni.setStorageSync("copyNameInfo", data.copyrightContext);
           uni.setStorageSync("copyImageInfo", data.copyrightImage);

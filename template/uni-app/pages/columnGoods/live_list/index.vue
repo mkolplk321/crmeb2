@@ -11,11 +11,11 @@
 						<view class="msg">{{item.show_time}}</view>
 					</view>
 					<view class="label bggary" v-if="item.live_status==103">
-						<image src="/static/images/live-02.png" mode="" style="width: 20rpx; height: 20rpx;"></image>
+						<image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/live-02.png" mode="" style="width: 20rpx; height: 20rpx;"></image>
 						<text>{{$t(`回放`)}}</text>
 					</view>
 					<view class="label bgred" v-if="item.live_status==101">
-						<image src="/static/images/live-01.png" mode="" style="width: 21rpx; height: 22rpx;"></image>
+						<image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/live-01.png" mode="" style="width: 21rpx; height: 22rpx;"></image>
 						<text>{{$t(`进行中`)}}</text>
 					</view>
 					<image :src="item.share_img"></image>

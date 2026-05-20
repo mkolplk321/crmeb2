@@ -187,7 +187,7 @@
 			 .header {
 				 width: 100%;
 				 height: 220upx;
-				 // background-image: url(../../static/images/banner.png);
+				 // background-image: url(../..https://goyoto.oss-cn-beijing.aliyuncs.com/images/banner.png);
 				 background-repeat: no-repeat;   //不重复
 				 background-size: 100% 100%;
 				 color: #FFFFFF;

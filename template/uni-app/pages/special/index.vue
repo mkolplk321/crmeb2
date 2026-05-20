@@ -1,7 +1,7 @@
 <template>
   <view class="activity-page">
     <view class="content">
-      <image src="/static/images/tabbar/activity-active.png" mode="aspectFit" class="icon"></image>
+      <image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/tabbar/activity-active.png" mode="aspectFit" class="icon"></image>
       <text class="title">活动专区</text>
       <text class="desc">点击查看最新活动</text>
       <button class="btn" @click="goActivity">进入活动</button>

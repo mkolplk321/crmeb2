@@ -40,7 +40,7 @@
               <!-- <text class='vip-money'
 								v-if="is_vip == 0 && attr.productSelect.vip_price">{{$t(`￥`)}}{{attr.productSelect.vip_price}}</text>
 							<view class="vipImg" v-if="is_vip == 0 && attr.productSelect.vip_price">
-								<image src="../../static/images/svip.gif"></image>
+								<image src="../..https://goyoto.oss-cn-beijing.aliyuncs.com/images/svip.gif"></image>
 							</view> -->
             </view>
 

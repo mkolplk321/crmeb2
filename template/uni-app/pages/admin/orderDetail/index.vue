@@ -84,7 +84,7 @@
 
         <view>地址：{{ orderInfo.user_address }}</view>
         <view class="line">
-          <image src="/static/images/line.jpg" />
+          <image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/line.jpg" />
         </view>
       </view>
       <view class="acea-row row-middle user-box">

@@ -29,7 +29,7 @@
 							<view class="line-title" :class="item.is_use >= item.receive_limit ? 'bg-color-huic' : ''" v-if="item.type === 0">{{ $t(`通用劵`) }}</view>
 							<view class="line-title" :class="item.is_use >= item.receive_limit ? 'bg-color-huic' : ''" v-else-if="item.type === 1">{{ $t(`品类券`) }}</view>
 							<view class="line-title" :class="item.is_use >= item.receive_limit ? 'bg-color-huic' : ''" v-else>{{ $t(`商品券`) }}</view>
-							<image v-if="item.receive_type === 4" class="pic" src="/static/images/fvip.png"></image>
+							<image v-if="item.receive_type === 4" class="pic" src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/fvip.png"></image>
 							<text class="title">{{ $t(item.title) }}</text>
 						</view>
 					</view>

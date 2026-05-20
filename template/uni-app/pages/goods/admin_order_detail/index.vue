@@ -20,7 +20,7 @@
 			<view>{{ orderInfo.user_address }}</view>
 		</view>
 		<view class="line">
-			<image src="/static/images/line.jpg" />
+			<image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/line.jpg" />
 		</view>
 		<view class="pos-order-goods">
 			<navigator :url="`/pages/goods_details/index?id=${item.productInfo.id}`" hover-class="none"

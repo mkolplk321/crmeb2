@@ -8,7 +8,7 @@
 						<view><text class="mr-40">{{ $t(`消费订单`) }}：{{ orderData.order_count || 0 }} 单 </text>{{ $t(`总消费`) }}：{{ $t(`￥`) }}{{ orderData.sum_price || 0 }}</view>
 					</view>
 					<view class="pictrue">
-						<image src="/static/images/orderTime.png"></image>
+						<image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/orderTime.png"></image>
 					</view>
 				</view>
 			</view>

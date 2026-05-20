@@ -10,9 +10,9 @@
 				<view class="line"></view>
 				<view class="card-bottom">
 					<view class="card-status">
-						<image class="status-icon" v-if="item.status === 0" src="../static/images/pending.png" mode=""></image>
-						<image class="status-icon" v-else-if="item.status === 1" src="../static/images/passed.png" mode=""></image>
-						<image class="status-icon" v-else-if="item.status === 2" src="../static/images/not-pass.png" mode=""></image>
+						<image class="status-icon" v-if="item.status === 0" src="..https://goyoto.oss-cn-beijing.aliyuncs.com/images/pending.png" mode=""></image>
+						<image class="status-icon" v-else-if="item.status === 1" src="..https://goyoto.oss-cn-beijing.aliyuncs.com/images/passed.png" mode=""></image>
+						<image class="status-icon" v-else-if="item.status === 2" src="..https://goyoto.oss-cn-beijing.aliyuncs.com/images/not-pass.png" mode=""></image>
 						<text class="status-text">{{statusText(item.status)}}</text>
 					</view>
 					<view class="status-btn" @click="jump(item)">{{statusBtn(item.status)}}</view>
@@ -21,7 +21,7 @@
 		</view>
 		<view class='no-shop' v-if="!listData.length && !loading">
 			<view class='pictrue' style="margin: 0 auto;">
-				<image src='/static/images/no-shop.png'></image>
+				<image src='https://goyoto.oss-cn-beijing.aliyuncs.com/images/no-shop.png'></image>
 				<text>{{$t(`暂无申请记录，快去申请吧!`)}}</text>
 			</view>
 		</view>

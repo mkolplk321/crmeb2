@@ -2,7 +2,7 @@
 	<view :style="colorStyle">
 		<view class='address-management' :class='addressList.length < 1 && page > 1 ? "fff":""'>
 			<view class='line'>
-				<image src='@/static/images/line.jpg' v-if="addressList.length"></image>
+				<image src='@https://goyoto.oss-cn-beijing.aliyuncs.com/images/line.jpg' v-if="addressList.length"></image>
 			</view>
 			<radio-group class="radio-group" @change="radioChange" v-if="addressList.length">
 				<view class='item' v-for="(item,index) in addressList" :key="index">

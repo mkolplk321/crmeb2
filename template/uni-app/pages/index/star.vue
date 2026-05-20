@@ -1,7 +1,7 @@
 <template>
   <view class="star-page">
     <view class="star-btn" @click="goStar">
-      <image src="/static/images/tabbar/star.png" mode="aspectFit"></image>
+      <image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/tabbar/star.png" mode="aspectFit"></image>
     </view>
   </view>
 </template>

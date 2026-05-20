@@ -5,17 +5,17 @@
         <view class="pictrue acea-row row-center-wrapper relative">
           <image :src="diyInfo.avatar" v-if="diyInfo.avatar && isLogin"></image>
           <image
-            src="@/static/images/king.png"
+            src="@https://goyoto.oss-cn-beijing.aliyuncs.com/images/king.png"
             class="king"
             v-if="diyInfo.is_money_level"
           ></image>
           <image
             v-if="!diyInfo.avatar && isLogin"
-            :src="dataConfig.logoConfig.url || '@/static/images/f.png'"
+            :src="dataConfig.logoConfig.url || '@https://goyoto.oss-cn-beijing.aliyuncs.com/images/f.png'"
           ></image>
           <image
             v-if="!isLogin"
-            :src="dataConfig.logoConfig.url || '@/static/images/f.png'"
+            :src="dataConfig.logoConfig.url || '@https://goyoto.oss-cn-beijing.aliyuncs.com/images/f.png'"
           ></image>
         </view>
         <view class="text">

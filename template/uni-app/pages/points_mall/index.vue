@@ -1,7 +1,7 @@
 <template>
 	<view :style="colorStyle">
 		<view class="points-swiper">
-			<image class="bag" src="../../static/images/jf-head.png" mode=""></image>
+			<image class="bag" src="../..https://goyoto.oss-cn-beijing.aliyuncs.com/images/jf-head.png" mode=""></image>
 			<view class="swiper">
 				<swiper indicator-dots="true" :autoplay="autoplay" :circular="circular" :interval="interval"
 					:duration="duration" indicator-color="rgba(255,255,255,0.6)" indicator-active-color="#fff">

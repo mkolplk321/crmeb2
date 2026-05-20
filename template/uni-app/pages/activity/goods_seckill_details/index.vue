@@ -373,7 +373,7 @@
     <!-- 海报展示 -->
     <view class="poster-pop" v-if="posterImageStatus">
       <image
-        src="/static/images/poster-close.png"
+        src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/poster-close.png"
         class="close"
         @click="posterImageClose"
       ></image>
@@ -531,7 +531,7 @@ export default {
       storeImage: "", //海报产品图
       PromotionCode: "", //二维码图片
       posterImage: "", //海报路径
-      posterbackgd: "/static/images/posterbackgd.png",
+      posterbackgd: "https://goyoto.oss-cn-beijing.aliyuncs.com/images/posterbackgd.png",
       actionSheetHidden: false,
       cart_num: "",
       homeTop: 20,

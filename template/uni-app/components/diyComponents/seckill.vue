@@ -85,10 +85,10 @@
                         background: progressBgColor,
                       }"
                     >
-                      <!-- <image src="@/static/images/lightning.png" class="lightning"></image> -->
+                      <!-- <image src="@https://goyoto.oss-cn-beijing.aliyuncs.com/images/lightning.png" class="lightning"></image> -->
                     </view>
                     <image
-                      src="@/static/images/lightning.png"
+                      src="@https://goyoto.oss-cn-beijing.aliyuncs.com/images/lightning.png"
                       class="lightning"
                       :style="{
                         left: item.percent + '%',
@@ -236,7 +236,7 @@
                 :color="bargainPriceColor"
               ></baseMoney>
               <image
-                src="@/static/images/shandian.png"
+                src="@https://goyoto.oss-cn-beijing.aliyuncs.com/images/shandian.png"
                 class="shandian"
               ></image>
             </view>
@@ -686,7 +686,7 @@ export default {
     left: -10rpx;
     width: 24rpx;
     height: 40rpx;
-    background-image: url("@/static/images/shandian.png");
+    background-image: url("@https://goyoto.oss-cn-beijing.aliyuncs.com/images/shandian.png");
     background-size: cover;
   }
 }

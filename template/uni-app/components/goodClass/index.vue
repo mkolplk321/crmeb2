@@ -14,7 +14,7 @@
 					<view class="money font-color">
 						<text class="sign">{{$t(`￥`)}}</text>{{item.price}}
 						<!-- <span class="vip" v-if="item.vip_price">
-							<image src="../../static/images/vip01.png"></image>
+							<image src="../..https://goyoto.oss-cn-beijing.aliyuncs.com/images/vip01.png"></image>
 							￥{{item.vip_price}}
 						</span>
 						<text class="y_money" v-else>￥{{item.ot_price}}</text> -->

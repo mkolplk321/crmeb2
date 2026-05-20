@@ -231,7 +231,7 @@
 		<!-- 海报展示 -->
 		<view class="mask" v-if="posterImageModal" @click="listenerActionClose"></view>
 		<view class="poster-pop" v-if="posterImageModal">
-			<image src="/static/images/poster-close.png" class="close" @click="listenerActionClose"></image>
+			<image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/poster-close.png" class="close" @click="listenerActionClose"></image>
 			<image class="poster-img" :src="posterImage"></image>
 			<!-- #ifndef H5  -->
 			<view class="save-poster" @click="savePosterPath">{{ $t(`保存到手机`) }}</view>
@@ -1387,7 +1387,7 @@ page {
 			justify-content: center;
 			width: 100%;
 			height: 100%;
-			background-image: url('~@/static/images/code-bg.png');
+			background-image: url('~@https://goyoto.oss-cn-beijing.aliyuncs.com/images/code-bg.png');
 			background-size: 100% 100%;
 		}
 

@@ -31,7 +31,7 @@
 								v-else-if='item.type===1'>{{$t(`品类券`)}}</span>
 							<span class='line-title' :class='item.is_use >= item.receive_limit && coupon.count?"gray":""'
 								v-else>{{$t(`商品券`)}}</span>
-							<image src='../../static/images/fvip.png' class="pic" v-if="item.receive_type===4"></image>
+							<image src='../..https://goyoto.oss-cn-beijing.aliyuncs.com/images/fvip.png' class="pic" v-if="item.receive_type===4"></image>
 							<span class='name'>{{$t(item.title)}}</span>
 						</view>
 						<view class='data acea-row row-between-wrapper'>

@@ -28,7 +28,7 @@
 								v-else-if="item.applicable_type === 1">{{$t(`品类券`)}}</view>
 							<view class="line-title" :class="item._type === 0 ? 'bg-color-huic' : 'bg-color-check'"
 								v-else>{{$t(`商品券`)}}</view>
-							<image src="../../../static/images/fvip.png" class="pic" v-if="item.receive_type===4">
+							<image src="../../..https://goyoto.oss-cn-beijing.aliyuncs.com/images/fvip.png" class="pic" v-if="item.receive_type===4">
 							</image>
 							{{$t(item.coupon_title)}}
 						</view>

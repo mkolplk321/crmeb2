@@ -11,7 +11,7 @@
               <view class="avatar">
                 <image v-if="avatarUrl" :src="avatarUrl" mode="aspectFill" />
                 <view class="empty-box" v-else>
-                  <image src="/static/images/shan.png" mode="aspectFill" />
+                  <image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/shan.png" mode="aspectFill" />
                 </view>
               </view>
               <view class="text">
@@ -68,7 +68,7 @@
               <view class="avatar">
                 <image v-if="avatarUrl" :src="avatarUrl" mode="aspectFill" />
                 <view class="empty-box" v-else>
-                  <image src="/static/images/shan.png" mode="aspectFill" />
+                  <image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/shan.png" mode="aspectFill" />
                 </view>
               </view>
             </view>
@@ -84,7 +84,7 @@
               <view class="avatar">
                 <image v-if="avatarUrl" :src="avatarUrl" mode="aspectFill" />
                 <view class="empty-box" v-else>
-                  <image src="/static/images/shan.png" mode="aspectFill" />
+                  <image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/shan.png" mode="aspectFill" />
                 </view>
               </view>
               <view class="text">
@@ -131,7 +131,7 @@
                 <view class="avatar">
                   <image v-if="avatarUrl" :src="avatarUrl" mode="aspectFill" />
                   <view class="empty-box" v-else>
-                    <image src="/static/images/shan.png" mode="aspectFill" />
+                    <image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/shan.png" mode="aspectFill" />
                   </view>
                 </view>
                 <view class="text">
@@ -263,7 +263,7 @@
                 <view class="avatar">
                   <image v-if="avatarUrl" :src="avatarUrl" mode="aspectFill" />
                   <view class="empty-box" v-else>
-                    <image src="/static/images/shan.png" mode="aspectFill" />
+                    <image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/shan.png" mode="aspectFill" />
                   </view>
                 </view>
                 <view class="text">

@@ -76,7 +76,7 @@
 		<view class="mask invoice-mask" v-if="refund_close" @click="refund_close = false"></view>
 		<view class="mask invoice-mask" v-if="codeModal" @click="codeModal = false"></view>
 		<view class="poster-pop" v-if="codeModal">
-			<image src="/static/images/poster-close.png" class="close" @click="posterImageClose"></image>
+			<image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/poster-close.png" class="close" @click="posterImageClose"></image>
 			<!-- #ifdef MP -->
 			<image :src="codeSrc"></image>
 			<!-- #endif -->

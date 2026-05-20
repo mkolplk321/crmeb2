@@ -36,7 +36,7 @@
                   <image class="image" :src="item.poster" mode="aspectFill"></image>
                 </view>
                 <view class="play-btn" v-show="videoControls" @click.stop="playVideo">
-                  <image class="icon" src="@/static/images/stop.png" mode="aspectFit"></image>
+                  <image class="icon" src="@https://goyoto.oss-cn-beijing.aliyuncs.com/images/stop.png" mode="aspectFit"></image>
                 </view>
               </view>
               <!-- 图片项 -->

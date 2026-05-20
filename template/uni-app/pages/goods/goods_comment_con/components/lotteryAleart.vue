@@ -1,6 +1,6 @@
 <template>
 	<view class="aleart" v-if="aleartStatus">
-		<image src="../../../../static/images/poster-close.png" class="close" @click="posterImageClose"></image>
+		<image src="../../../..https://goyoto.oss-cn-beijing.aliyuncs.com/images/poster-close.png" class="close" @click="posterImageClose"></image>
 		<view class="title">
 			{{aleartData.title}}
 		</view>

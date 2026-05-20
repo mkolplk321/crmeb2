@@ -910,9 +910,9 @@ export default {
     getPictureUrl(item, dataItem) {
       const field = item.propValue.fieldType;
       if (this.selectTypeValue === "user" && field === "image") {
-        if (!this.isLogin) return item.propValue.url || "/static/images/f.png";
+        if (!this.isLogin) return item.propValue.url || "https://goyoto.oss-cn-beijing.aliyuncs.com/images/f.png";
         return (
-          this.userInfo.image || item.propValue.url || "/static/images/f.png"
+          this.userInfo.image || item.propValue.url || "https://goyoto.oss-cn-beijing.aliyuncs.com/images/f.png"
         );
       }
       if (dataItem && field) {

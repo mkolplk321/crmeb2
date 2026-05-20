@@ -65,7 +65,7 @@
 					</view>
 				</view>
 				<view class='line'>
-					<image src='/static/images/line.jpg'></image>
+					<image src='https://goyoto.oss-cn-beijing.aliyuncs.com/images/line.jpg'></image>
 				</view>
 			</view>
 			<view v-if="giftData" class="gift-box">

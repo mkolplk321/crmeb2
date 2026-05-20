@@ -108,7 +108,7 @@
           v-if="configData && configData.network_security"
           @click="goICP(configData.network_security_url)"
         >
-          <image class="ban" src="/static/images/beian.png" alt="" srcset="" />
+          <image class="ban" src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/beian.png" alt="" srcset="" />
           {{ configData.network_security }}
         </view>
         <!-- #endif -->
@@ -387,7 +387,7 @@ export default {
           let data = res.data;
           uni.setStorageSync("wechatStatus", data.wechat_status);
           if (!data.copyrightContext && !data.copyrightImage) {
-            data.copyrightImage = "/static/images/support.png";
+            data.copyrightImage = "https://goyoto.oss-cn-beijing.aliyuncs.com/images/support.png";
           }
           uni.setStorageSync("copyNameInfo", data.copyrightContext);
           uni.setStorageSync("copyImageInfo", data.copyrightImage);

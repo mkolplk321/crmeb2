@@ -13,15 +13,15 @@
 				<view class='item line1' :class='title ? "font-num":""' @click='set_where(1)'>{{$t(`默认`)}}</view>
 				<view class='item' @click='set_where(2)'>
 					{{$t(`积分`)}}
-					<image v-if="price==1" src='../../static/images/up.png'></image>
-					<image v-else-if="price==2" src='../../static/images/down.png'></image>
-					<image v-else src='../../static/images/horn.png'></image>
+					<image v-if="price==1" src='../..https://goyoto.oss-cn-beijing.aliyuncs.com/images/up.png'></image>
+					<image v-else-if="price==2" src='../..https://goyoto.oss-cn-beijing.aliyuncs.com/images/down.png'></image>
+					<image v-else src='../..https://goyoto.oss-cn-beijing.aliyuncs.com/images/horn.png'></image>
 				</view>
 				<view class='item' @click='set_where(3)'>
 					{{$t(`销量`)}}
-					<image v-if="stock==1" src='../../static/images/up.png'></image>
-					<image v-else-if="stock==2" src='../../static/images/down.png'></image>
-					<image v-else src='../../static/images/horn.png'></image>
+					<image v-if="stock==1" src='../..https://goyoto.oss-cn-beijing.aliyuncs.com/images/up.png'></image>
+					<image v-else-if="stock==2" src='../..https://goyoto.oss-cn-beijing.aliyuncs.com/images/down.png'></image>
+					<image v-else src='../..https://goyoto.oss-cn-beijing.aliyuncs.com/images/horn.png'></image>
 				</view>
 			</view>
 			<view class='list acea-row row-between-wrapper' :class='is_switch==true?"":"on"'>
@@ -37,7 +37,7 @@
 						<view class='vip acea-row row-between-wrapper' :class='is_switch==true?"":"on"'>
 							<view class='vip-money' v-if="item.vip_price && item.vip_price > 0">{{item.vip_price}}
 								{{$t(`积分`)}}
-								<image src='../../static/images/vip.png'></image>
+								<image src='../..https://goyoto.oss-cn-beijing.aliyuncs.com/images/vip.png'></image>
 							</view>
 							<view class="sales">
 								<view class="">

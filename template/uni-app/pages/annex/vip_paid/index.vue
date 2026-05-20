@@ -106,7 +106,7 @@
 					<view class="name">{{ item.store_name }}</view>
 					<view class="svip-price">
 						{{ $t(`￥`) }}{{ item.vip_price }}
-						<image src="../../../static/images/vip.png"></image>
+						<image src="../../..https://goyoto.oss-cn-beijing.aliyuncs.com/images/vip.png"></image>
 					</view>
 					<view class="shop-price">{{ $t(`商城价`) }}：{{ $t(`￥`) }}{{ item.price }}</view>
 				</view>

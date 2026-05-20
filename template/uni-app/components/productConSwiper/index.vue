@@ -14,7 +14,7 @@
 						<image class="image" :src="imgUrls[0]"></image>
 					</view>
 					<view class="stop" v-show="controls" @click.stop="bindPause">
-						<image class="image" src="../../static/images/stop.png"></image>
+						<image class="image" src="../..https://goyoto.oss-cn-beijing.aliyuncs.com/images/stop.png"></image>
 					</view>
 				</view>
 			</swiper-item>
@@ -26,7 +26,7 @@
 						<image class="image" :src="imgUrls[0]"></image>
 					</view>
 					<view class="stop" v-show="controls" @tap="bindPause">
-						<image class="image" src="../../static/images/stop.png"></image>
+						<image class="image" src="../..https://goyoto.oss-cn-beijing.aliyuncs.com/images/stop.png"></image>
 					</view>
 				</view>
 			</swiper-item>
