@@ -1788,6 +1788,16 @@
 		"titleNView": false,
 		"pageOrientation": "portrait" // 全局设置为竖屏
 	},
+	"preloadRule": {
+		"pages/index/index": {
+			"network": "all",
+			"packages": ["pages/annex", "pages/goods_details"]
+		},
+		"pages/special/index": {
+			"network": "all",
+			"packages": ["pages/annex"]
+		}
+	},
 	"condition": { //模式配置，仅开发期间生效
 		"current": 0, //当前激活的模式(list 的索引项)
 		"list": [{
