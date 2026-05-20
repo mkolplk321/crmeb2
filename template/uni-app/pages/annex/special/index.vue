@@ -1,7 +1,6 @@
 <template>
   <!-- 首页 -->
   <view
-    v-if="pageShow"
     class="page"
     :class="
       bgTabVal == 2
@@ -12,7 +11,11 @@
     "
     :style="pageStyle"
   >
+    <view v-if="!pageShow" class="loading-wrap">
+      <text>加载中...</text>
+    </view>
     <PageDesign
+      v-show="pageShow"
       :style="colorStyle"
       :diyData="currentDiyData"
       :isHome="true"
@@ -845,6 +848,14 @@ export default {
 .page {
   overflow-y: scroll;
   overflow-x: hidden;
+}
+.loading-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  color: #999;
+  font-size: 28rpx;
 }
 .myApplet {
   position: relative;
