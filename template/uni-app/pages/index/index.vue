@@ -45,7 +45,7 @@
         <!-- 底部品牌区域 -->
         <view class="footer-section">
           <view class="brand-logo">
-            <image class="logo-image" src="/static/images/brand-logo.png" mode="aspectFit"></image>
+            <image class="logo-image" src="/static/images/brand-logo.jpg" mode="aspectFit"></image>
           </view>
           <view class="brand-name">闪电自行车 Club</view>
           <view class="copyright">© 2026 闪电自行车 Club All Rights Reserved</view>
@@ -111,7 +111,7 @@ export default {
         {
           name: "服务预约",
           sub: "预约骑行 We服务",
-          image: "/static/images/icon-reservation.png",
+          image: "/static/images/icon-reservation.jpg",
           url: "/pages/goods_details/index?id=11",
           type: "navigateTo",
         },
