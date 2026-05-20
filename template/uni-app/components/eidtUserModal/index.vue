@@ -73,7 +73,7 @@
 		},
 		data() {
 			return {
-				defHead: require('https://goyoto.oss-cn-beijing.aliyuncs.com/images/def_avatar.png'),
+				defHead: '/static/images/def_avatar.png',
 				mp_is_new: this.$Cache.get('MP_VERSION_ISNEW') || false,
 				userInfo: {
 					avatar: '',

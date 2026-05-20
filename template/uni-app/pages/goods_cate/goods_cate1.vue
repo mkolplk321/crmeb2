@@ -80,7 +80,7 @@
 		},
 		data() {
 			return {
-				defimg: require('https://goyoto.oss-cn-beijing.aliyuncs.com/images/all_cat.png'),
+				defimg: '/static/images/all_cat.png',
 				navlist: [],
 				productList: [],
 				navActive: 0,

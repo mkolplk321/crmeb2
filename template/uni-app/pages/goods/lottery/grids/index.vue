@@ -441,7 +441,7 @@ page {
 			justify-content: center;
 			width: 100%;
 			height: 100%;
-			background-image: url('~https://goyoto.oss-cn-beijing.aliyuncs.com/images/code-bg.png');
+			background-image: url('https://goyoto.oss-cn-beijing.aliyuncs.com/images/code-bg.png');
 			background-size: 100% 100%;
 		}
 
