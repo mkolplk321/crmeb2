@@ -3,7 +3,7 @@
   <view class="page" :style="{ minHeight: windowHeight + 'px' }">
     <!-- 全屏背景图（延伸到页面底部，底部渐变为白色） -->
     <view class="full-bg-wrap" :style="{ paddingTop: statusBarHeight + 'px' }">
-      <image class="full-bg-img" src="/static/images/banner-bg.png" mode="aspectFill"></image>
+      <image class="full-bg-img" src="/static/images/banner-bg.jpg" mode="aspectFill"></image>
       <view class="full-fade"></view>
     </view>
 
@@ -118,35 +118,35 @@ export default {
         {
           name: "RETUL FIT",
           sub: "Fitting 服务预约",
-          image: "/static/images/icon-fit.png",
+          image: "/static/images/icon-fit.jpg",
           url: "/pages/goods_details/index?id=14",
           type: "navigateTo",
         },
         {
           name: "试骑体验",
           sub: "Demo Bike",
-          image: "/static/images/icon-test.png",
+          image: "/static/images/icon-test.jpg",
           url: "/pages/goods_details/index?id=17",
           type: "navigateTo",
         },
         {
           name: "门店服务",
           sub: "Store Service",
-          image: "/static/images/icon-store.png",
+          image: "/static/images/icon-store.jpg",
           url: "/pages/annex/special/index?theme_id=5",
           type: "navigateTo",
         },
         {
           name: "闪电周边",
           sub: "The Cyclist Club",
-          image: "/static/images/icon-goods.png",
+          image: "/static/images/icon-goods.jpg",
           url: "/pages/goods_details/index?id=12",
           type: "navigateTo",
         },
         {
           name: "关于我们",
           sub: "About Us...",
-          image: "/static/images/icon-about.png",
+          image: "/static/images/icon-about.jpg",
           url: "/pages/annex/special/index?theme_id=17",
           type: "navigateTo",
         },

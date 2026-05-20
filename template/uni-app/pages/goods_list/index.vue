@@ -45,11 +45,11 @@ export default {
     return {
       gridList: [
         { title: '服务预约', subtitle: '贴心好服务 轻松搞定', image: '/static/images/icon-reservation.png', page: '' },
-        { title: 'RETUL FIT', subtitle: 'Fitting提升体验', image: '/static/images/icon-fit.png', page: '' },
-        { title: '试骑体验', subtitle: 'Demo Day', image: '/static/images/icon-test.png', page: '' },
-        { title: '门店服务', subtitle: 'Retail Services', image: '/static/images/icon-store.png', page: '' },
-        { title: '闪电周边', subtitle: 'The Cycles Club', image: '/static/images/icon-goods.png', page: '' },
-        { title: '关于我们', subtitle: 'About Us', image: '/static/images/icon-about.png', page: '' }
+        { title: 'RETUL FIT', subtitle: 'Fitting提升体验', image: '/static/images/icon-fit.jpg', page: '' },
+        { title: '试骑体验', subtitle: 'Demo Day', image: '/static/images/icon-test.jpg', page: '' },
+        { title: '门店服务', subtitle: 'Retail Services', image: '/static/images/icon-store.jpg', page: '' },
+        { title: '闪电周边', subtitle: 'The Cycles Club', image: '/static/images/icon-goods.jpg', page: '' },
+        { title: '关于我们', subtitle: 'About Us', image: '/static/images/icon-about.jpg', page: '' }
       ]
     }
   },
