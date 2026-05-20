@@ -103,6 +103,12 @@
 					// #endif
 				}
 			}
+		},
+		{
+			"path": "pages/special/index",
+			"style": {
+				"navigationBarTitleText": "活动"
+			}
 		}
 
 	],
@@ -1755,7 +1761,7 @@
 				"text": "首页"
 			},
 			{
-				"pagePath": "pages/annex/special/index",
+				"pagePath": "pages/special/index",
 				"iconPath": "static/images/tabbar/activity.png",
 				"selectedIconPath": "static/images/tabbar/activity-active.png",
 				"text": "活动"
