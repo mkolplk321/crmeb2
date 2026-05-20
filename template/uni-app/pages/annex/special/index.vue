@@ -258,7 +258,7 @@ export default {
   onLoad(options) {
     let that = this;
     that.getOptions(options);
-    this.themeId = 20; // 固定使用 id=20 的专题
+    this.themeId = options.theme_id || 20; // 使用传入的theme_id，默认20
     this.$nextTick(function () {
       uni.getSystemInfo({
         success: function (res) {
