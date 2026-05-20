@@ -6,7 +6,7 @@
         class="text-wrap acea-row row-middle"
       >
         <image
-          src="@https://goyoto.oss-cn-beijing.aliyuncs.com/images/sign-icon-04.png"
+          src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/sign-icon-04.png"
           mode="widthFix"
           class="image"
         ></image>
@@ -19,7 +19,7 @@
                 :class="{ opacity: !dataConfig.toneConfig.tabVal }"
               >
                 <image
-                  src="@https://goyoto.oss-cn-beijing.aliyuncs.com/images/sign-icon-01.png"
+                  src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/sign-icon-01.png"
                   mode="widthFix"
                   class="icon"
                 ></image>
@@ -45,19 +45,19 @@
           >
             <image
               v-if="item.is_sign"
-              src="@https://goyoto.oss-cn-beijing.aliyuncs.com/images/sign-icon-03.png"
+              src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/sign-icon-03.png"
               mode="widthFix"
               class="image"
             ></image>
             <image
               v-else-if="item.type == 1"
-              src="@https://goyoto.oss-cn-beijing.aliyuncs.com/images/sign-icon-01.png"
+              src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/sign-icon-01.png"
               mode="widthFix"
               class="image"
             ></image>
             <image
               v-else-if="item.type == 2"
-              src="@https://goyoto.oss-cn-beijing.aliyuncs.com/images/sign-icon-02.png"
+              src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/sign-icon-02.png"
               mode="widthFix"
               class="image"
             ></image>

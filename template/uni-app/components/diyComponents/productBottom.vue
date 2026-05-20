@@ -81,7 +81,7 @@
           <view v-if="is_gift" @click="goGift()" class="item">
             <image
               class="gift-icon"
-              src="@https://goyoto.oss-cn-beijing.aliyuncs.com/images/gift-icon.png"
+              src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/gift-icon.png"
               mode=""
             ></image>
             <view class="p_center">{{ $t(`送礼物`) }}</view>
@@ -112,7 +112,7 @@
           <view v-if="is_gift" @click="goGift()" class="item">
             <image
               class="gift-icon"
-              src="@https://goyoto.oss-cn-beijing.aliyuncs.com/images/gift-icon.png"
+              src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/gift-icon.png"
               mode=""
             ></image>
             <view class="p_center">{{ $t(`送礼物`) }}</view>

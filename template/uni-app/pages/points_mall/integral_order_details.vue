@@ -7,7 +7,7 @@
 					<view>{{cartInfo.user_address}}</view>
 				</view>
 				<view class='line'>
-					<image src='@https://goyoto.oss-cn-beijing.aliyuncs.com/images/line.jpg'></image>
+					<image src='https://goyoto.oss-cn-beijing.aliyuncs.com/images/line.jpg'></image>
 				</view>
 			</view>
 			<view class="orderGoods">

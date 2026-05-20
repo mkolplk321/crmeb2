@@ -44,7 +44,7 @@
 				</view>
 			</view>
 			<view class="line" v-if="[4, 5].includes(orderInfo.refund_type)">
-				<image src="@https://goyoto.oss-cn-beijing.aliyuncs.com/images/line.jpg"></image>
+				<image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/line.jpg"></image>
 			</view>
 			<view class="mb-16" v-if="isGoodsReturn == false">
 				<view class="nav" v-if="is_gift != 2">
@@ -197,7 +197,7 @@
 						</view>
 					</view>
 					<view class="line" v-if="orderInfo.shipping_type === 1 && !is_gift">
-						<image src="@https://goyoto.oss-cn-beijing.aliyuncs.com/images/line.jpg"></image>
+						<image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/line.jpg"></image>
 					</view>
 				</view>
 				<view v-if="orderInfo.virtual_type != 0" style="paddingtop: 6px"></view>

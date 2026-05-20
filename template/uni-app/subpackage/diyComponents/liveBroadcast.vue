@@ -54,7 +54,7 @@
                 }}</view>
                 <view class="people acea-row row-middle" v-if="anchorShow">
                   <image
-                    :src="item.anchor_img || require('@https://goyoto.oss-cn-beijing.aliyuncs.com/images/f.png')"
+                    :src="item.anchor_img || require('https://goyoto.oss-cn-beijing.aliyuncs.com/images/f.png')"
                     class="w-40 h-40 borderRadius20 mr-12"
                   ></image>
                   <text>{{ $t(`主播`) }}：{{ item.anchor_name }}</text>
@@ -173,7 +173,7 @@
                   }}</view>
                   <view class="people acea-row row-middle" v-if="anchorShow">
                     <image
-                      :src="item.anchor_img || require('@https://goyoto.oss-cn-beijing.aliyuncs.com/images/f.png')"
+                      :src="item.anchor_img || require('https://goyoto.oss-cn-beijing.aliyuncs.com/images/f.png')"
                       class="w-40 h-40 borderRadius20 mr-12"
                     ></image>
                     <text>{{ $t(`主播`) }}：{{ item.anchor_name }}</text>
@@ -226,7 +226,7 @@
                   </view>
                   <view class="people acea-row row-middle" v-if="anchorShow">
                     <image
-                      :src="item.anchor_img || require('@https://goyoto.oss-cn-beijing.aliyuncs.com/images/f.png')"
+                      :src="item.anchor_img || require('https://goyoto.oss-cn-beijing.aliyuncs.com/images/f.png')"
                       class="w-40 h-40 borderRadius20 mr-12"
                     ></image>
                     <text>{{ $t(`主播`) }}：{{ item.anchor_name }}</text>
@@ -281,7 +281,7 @@
                   }}</view>
                   <view class="people acea-row row-middle" v-if="anchorShow">
                     <image
-                      :src="item.anchor_img || require('@https://goyoto.oss-cn-beijing.aliyuncs.com/images/f.png')"
+                      :src="item.anchor_img || require('https://goyoto.oss-cn-beijing.aliyuncs.com/images/f.png')"
                       class="w-40 h-40 borderRadius20 mr-12"
                     ></image>
                     <text>{{ $t(`主播`) }}：{{ item.anchor_name }}</text>

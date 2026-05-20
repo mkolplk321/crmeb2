@@ -13,7 +13,7 @@
         <view>地址：{{ delivery.user_address }}</view>
       </view>
       <view class="line">
-        <image src="@https://goyoto.oss-cn-beijing.aliyuncs.com/images/line.jpg" />
+        <image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/line.jpg" />
       </view>
     </header>
     <view class="wrapper">
