@@ -348,10 +348,10 @@ export default {
 @import url("@/plugin/animate/animate.min.css");
 @import "static/css/base.css";
 @import "static/iconfont/iconfont.css";
-@import "static/css/guildford.css";
+/* @import "static/css/guildford.css"; -- 含base64字体60KB，按需在页面中引入 */
 @import "static/css/style.scss";
 @import "static/css/unocss.css";
-@import "static/fonts/font.scss";
+/* @import "static/fonts/font.scss"; -- TTF字体67KB，仅分包使用，按需在分包中引入 */
 
 view {
   box-sizing: border-box;

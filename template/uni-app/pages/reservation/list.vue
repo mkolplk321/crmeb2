@@ -332,6 +332,7 @@ components: {
 </script>
 
 <style scoped lang="scss">
+@import "@/static/css/guildford.css";
 .my-order .header {
 	height: 260rpx;
 	padding: 0 30rpx;

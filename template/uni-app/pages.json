@@ -1735,18 +1735,7 @@
 					}
 				}
 			]
-		},
-		{
-			"root": "subpackage/diyComponents",
-			"name": "diyComponents",
-			"pages": [{
-				"path": "pages/placeholder",
-				"style": {
-					"navigationBarTitleText": ""
-				}
-			}]
-		}	
-
+		}
 	],
 	"tabBar": { // 底部菜单 - 闪电自行车Club小程序
 		"color": "#666666",

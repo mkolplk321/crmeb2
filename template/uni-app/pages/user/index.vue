@@ -70,7 +70,7 @@ import emptyPage from "@/components/emptyPage.vue";
 import Loading from "@/components/Loading/index.vue";
 import { getCrmebCopyRight } from "@/api/api.js";
 import { goShopDetail } from "@/libs/order.js";
-import PageDesign from "@/subpackage/diyComponents/pageDesign.vue";
+import PageDesign from "@/components/diyComponents/pageDesignUser.vue";
 
 export default {
   components: {

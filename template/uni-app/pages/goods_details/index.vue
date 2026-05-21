@@ -298,8 +298,8 @@ import { sharePoster } from "@/mixins/sharePoster";
 import homeList from "@/components/homeList";
 import specs from "./components/specs/index.vue";
 import serviceModal from "./components/serviceModal/index.vue";
-import PageDesign from "@/subpackage/diyComponents/pageDesign.vue";
-import productBottom from "@/subpackage/diyComponents/productBottom.vue";
+import PageDesign from "@/components/diyComponents/pageDesign.vue";
+import productBottom from "@/components/diyComponents/productBottom.vue";
 export default {
   components: {
     couponListWindow,
