@@ -190,6 +190,7 @@
             "postcss" : true,
             "es6" : true
         },
+		"lazyCodeLoading" : "requiredComponents",
         "permission" : {
             "scope.userLocation" : {
                 "desc" : "你的位置信息将用于查看与门店的距离"
@@ -248,8 +249,7 @@
             "immersed" : true
         }
     },
-    "_spaceID" : "679f0930-8f60-425c-9033-8c135f397ea5",
-    "lazyCodeLoading" : "requiredComponents"
+    "_spaceID" : "679f0930-8f60-425c-9033-8c135f397ea5"
 }
 /* ios打包配置 */
 
