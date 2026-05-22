@@ -21,7 +21,10 @@
       "Bash(sed -i '' 's|from \"./promotionList.vue\"|from \"@/components/diyComponents/promotionList.vue\"|g' pages/goods_details/diyComponents/pageDesign.vue pages/annex/diyComponents/pageDesign.vue)",
       "Bash(curl -s -o /dev/null -w '%{http_code}' https://goyoto.oss-cn-beijing.aliyuncs.com/images/__TRACKED_VAR__)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://goyoto.oss-cn-beijing.aliyuncs.com/images/address.png\")",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://goyoto.oss-cn-beijing.aliyuncs.com/images/lightning.png\")"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://goyoto.oss-cn-beijing.aliyuncs.com/images/lightning.png\")",
+      "Bash(perl *)",
+      "Bash(sed -i '' '365s|.*|\t@import \"../static/fonts/font.scss\";|' pages/users/user_sgin/index.vue)",
+      "Bash(sed -n '364,367p' pages/users/user_sgin/index.vue)"
     ]
   }
 }

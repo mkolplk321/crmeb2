@@ -362,6 +362,7 @@
 </script>
 
 <style scoped lang="scss">
+	@import "../static/fonts/font.scss";
 	.bgcolor {
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
