@@ -185,6 +185,10 @@ export default {
     this.getCoupon();
   },
   onShow() {
+    // 更新自定义 TabBar 选中状态
+    if (typeof this.getTabBar === 'function' && this.getTabBar()) {
+      this.getTabBar().setData({ selected: 0 });
+    }
     // 刷新时重新获取优惠券
     if (this.isLogin) {
       this.getCoupon();

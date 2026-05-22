@@ -250,6 +250,9 @@ export default {
     // #endif
   },
   onShow: function () {
+		if (typeof this.getTabBar === 'function' && this.getTabBar()) {
+			this.getTabBar().setData({ selected: 3 });
+		}
     let that = this;
     // #ifdef APP-PLUS
     uni.getSystemInfo({

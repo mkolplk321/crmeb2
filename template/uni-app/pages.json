@@ -3,7 +3,7 @@
 		"autoscan": true,
 		"custom": {}
 	},
-	"pages": [ //pages数组中第一项表示应用启动页 - 仅保留4个tabbar页面在主包
+	"pages": [
 		{
 			"path": "pages/index/index",
 			"style": {
@@ -23,40 +23,23 @@
 		{
 			"path": "pages/user/index",
 			"style": {
-
 				"navigationBarTitleText": "个人中心",
-				"mp-weixin": {
-					"componentPlaceholder": {
-						"page-design": "view"
-					}
-				},
-				"enablePullDownRefresh": true
-					// #ifdef MP || APP-PLUS
-					,
+				"mp-weixin": { "componentPlaceholder": { "page-design": "view" } },
+				"enablePullDownRefresh": true,
 				"navigationStyle": "custom",
-				// "navigationBarBackgroundColor": "#e93323",
 				"navigationBarTextStyle": "black"
-				// #endif
 			}
 		},
 		{
 			"path": "pages/reservation/list",
 			"style": {
 				"navigationBarTitleText": "预约",
-				"app-plus": {
-					// #ifdef APP-PLUS
-					"titleNView": {
-						"type": "default"
-					}
-					// #endif
-				}
+				"app-plus": { "titleNView": { "type": "default" } }
 			}
 		},
 		{
 			"path": "pages/special/index",
-			"style": {
-				"navigationBarTitleText": "活动"
-			}
+			"style": { "navigationBarTitleText": "活动" }
 		}
 	],
 	// 模块分包
@@ -73,7 +56,7 @@
 				}
 			}]
 		},
-		{
+		  {
 			"root": "pages/goods_details",
 			"name": "goods_details",
 			"pages": [{
@@ -1723,7 +1706,8 @@
 			]
 		}
 	],
-	"tabBar": { // 底部菜单 - 闪电自行车Club小程序
+	"tabBar": { // 底部菜单（自定义TabBar）
+		"custom": true,
 		"color": "#666666",
 		"selectedColor": "#333333",
 		"borderStyle": "black",
@@ -1766,7 +1750,7 @@
 	"preloadRule": {
 		"pages/index/index": {
 			"network": "all",
-			"packages": ["pages/annex", "pages/goods_details"]
+			"packages": ["pages/users", "pages/annex", "pages/goods_details"]
 		},
 		"pages/special/index": {
 			"network": "all",

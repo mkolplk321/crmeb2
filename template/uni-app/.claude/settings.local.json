@@ -24,7 +24,9 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://goyoto.oss-cn-beijing.aliyuncs.com/images/lightning.png\")",
       "Bash(perl *)",
       "Bash(sed -i '' '365s|.*|\t@import \"../static/fonts/font.scss\";|' pages/users/user_sgin/index.vue)",
-      "Bash(sed -n '364,367p' pages/users/user_sgin/index.vue)"
+      "Bash(sed -n '364,367p' pages/users/user_sgin/index.vue)",
+      "Bash(node -e \"const fs=require\\('fs'\\); const t=fs.readFileSync\\('pages.json','utf8'\\).replace\\(/\\\\/\\\\/.*/g,''\\); JSON.parse\\(t\\); console.log\\('JSON OK'\\)\")",
+      "Bash(python3)"
     ]
   }
 }

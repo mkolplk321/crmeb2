@@ -18,6 +18,11 @@ export default {
     // 自动跳转到专题页面
     this.goActivity();
   },
+  onShow() {
+    if (typeof this.getTabBar === 'function' && this.getTabBar()) {
+      this.getTabBar().setData({ selected: 1 });
+    }
+  },
   methods: {
     goActivity() {
       uni.navigateTo({
