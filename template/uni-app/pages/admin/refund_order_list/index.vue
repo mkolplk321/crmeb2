@@ -139,7 +139,7 @@
 	import Loading from '@/components/Loading/index'
 	import PriceChange from '../components/PriceChange/index.vue'
 	import emptyPage from '@/components/emptyPage.vue'
-	import NavBar from '@/components/NavBar.vue'
+	import NavBar from '../components/NavBar.vue'
 	import {
 		isMoney
 	} from '@/utils/validate.js';

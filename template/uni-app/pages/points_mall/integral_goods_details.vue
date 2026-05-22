@@ -191,7 +191,7 @@
 const app = getApp();
 import { mapGetters } from "vuex";
 import { getIntegralProductDetail } from "@/api/activity.js";
-import productConSwiper from "@/components/productConSwiper/index.vue";
+import productConSwiper from "@/components/productConSwiper";
 import productWindow from "./component/productWindow.vue";
 import userEvaluation from "@/components/userEvaluation/index.vue";
 import kefuIcon from "@/components/kefuIcon";

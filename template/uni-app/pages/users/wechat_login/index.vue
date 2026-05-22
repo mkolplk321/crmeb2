@@ -118,7 +118,7 @@ let statusBarHeight = uni.getWindowInfo().statusBarHeight + "px";
 import mobileLogin from "../components/login_mobile/index.vue";
 import routinePhone from "../components/login_mobile/routine_phone.vue";
 import editUserModal from "@/components/eidtUserModal/index.vue";
-import privacyAgreementPopup from "@/components/privacyAgreementPopup/index.vue";
+import privacyAgreementPopup from "../components/privacyAgreementPopup/index.vue";
 import {
   getLogo,
   silenceAuth,
@@ -203,7 +203,7 @@ export default {
     // #endif
     let pages = getCurrentPages();
     let prePage = pages[pages.length - 2];
-    if (prePage && prePage.route == "pages/order_addcart/order_addcart") {
+    if (prePage && prePage.route == "pages/goods/order_addcart/order_addcart") {
       this.isHome = true;
     } else {
       this.isHome = false;

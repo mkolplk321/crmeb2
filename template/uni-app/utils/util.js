@@ -1073,10 +1073,10 @@ export default {
       } else {
         if (
           [
-            "/pages/goods_cate/goods_cate",
-            "/pages/order_addcart/order_addcart",
             "/pages/user/index",
             "/pages/index/index",
+            "/pages/reservation/list",
+            "/pages/special/index",
           ].indexOf(url) == -1
         ) {
           uni.navigateTo({

@@ -168,7 +168,7 @@ export default {
       member_style: 0,
       my_banner_status: 0,
       is_diy: uni.getStorageSync("is_diy"),
-      copyRightPic: require("static/images/support.png"), //版权图片
+      copyRightPic: "https://goyoto.oss-cn-beijing.aliyuncs.com/images/support.png", //版权图片
       belongIndex: 0,
       isScrolled: false,
       isFixed: false,

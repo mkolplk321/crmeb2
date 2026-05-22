@@ -265,7 +265,7 @@
 	import PriceChange from "../components/PriceChange/index.vue";
 	import customForm from "../components/customForm";
 	// #ifdef MP || APP-PLUS
-	import NavBar from "@/components/NavBar.vue";
+	import NavBar from "../components/NavBar.vue";
 	// #endif
 	import {
 		getAdminOrderDetail,

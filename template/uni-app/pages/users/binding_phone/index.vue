@@ -66,7 +66,7 @@
 	import sendVerifyCode from "@/mixins/SendVerifyCode";
 	import colors from '@/mixins/color.js';
 	import editUserModal from '@/components/eidtUserModal/index.vue'
-	import privacyAgreementPopup from '@/components/privacyAgreementPopup/index.vue'
+	import privacyAgreementPopup from '../components/privacyAgreementPopup/index.vue'
 	import {
 		bindingUserPhone,
 		verifyCode,
@@ -127,7 +127,7 @@
 			}
 			let pages = getCurrentPages();
 			let prePage = pages[pages.length - 2];
-			if (prePage && prePage.route == 'pages/order_addcart/order_addcart') {
+			if (prePage && prePage.route == 'pages/goods/order_addcart/order_addcart') {
 				this.isHome = true;
 			} else {
 				this.isHome = false;

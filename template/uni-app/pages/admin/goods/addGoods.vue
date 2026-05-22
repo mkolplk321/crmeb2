@@ -194,7 +194,7 @@
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue";
+import NavBar from "../components/NavBar.vue";
 import classify from "./components/classify/index.vue";
 import { getTemplateOption, productCreate } from "@/api/admin.js"
 export default {

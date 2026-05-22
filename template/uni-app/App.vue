@@ -111,7 +111,7 @@ export default {
     // #endif
   },
   async onLaunch(option) {
-    uni.hideTabBar();
+    // uni.hideTabBar(); // 注释掉，使用原生 TabBar
     let that = this;
     basicConfig().then((res) => {
       uni.setStorageSync("BASIC_CONFIG", res.data);

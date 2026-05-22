@@ -1237,7 +1237,7 @@ export default {
     },
     goCart() {
       uni.reLaunch({
-        url: "/pages/order_addcart/order_addcart",
+        url: "/pages/goods/order_addcart/order_addcart",
       });
     },
     /*

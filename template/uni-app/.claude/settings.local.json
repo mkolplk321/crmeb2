@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs ls -lh)",
+      "Bash(sort -k5 -hr)",
+      "Bash(grep -v \"^.*<!--.*Authorize.*-->.*$\")",
+      "Bash(git checkout *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://goyoto.oss-cn-beijing.aliyuncs.com/images/f.png\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://goyoto.oss-cn-beijing.aliyuncs.com/images/def_avatar.png\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://goyoto.oss-cn-beijing.aliyuncs.com/images/all_cat.png\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://goyoto.oss-cn-beijing.aliyuncs.com/images/support.png\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://goyoto.oss-cn-beijing.aliyuncs.com/images/extracted/index_0.jpg\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://goyoto.oss-cn-beijing.aliyuncs.com/images/extracted/static_css_style.scss_0.png\")",
+      "Bash(git add *)"
+    ]
+  }
+}

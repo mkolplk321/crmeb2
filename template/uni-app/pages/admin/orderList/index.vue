@@ -171,7 +171,7 @@
 	import countDown from '@/components/countDown/index.vue'
 	import emptyPage from '@/components/emptyPage.vue'
 	// #ifdef MP || APP-PLUS
-	import NavBar from '@/components/NavBar.vue';
+	import NavBar from '../components/NavBar.vue';
 	// #endif
 	import {
 		isMoney

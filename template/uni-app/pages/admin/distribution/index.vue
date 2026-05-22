@@ -174,7 +174,7 @@
 	import Loading from '@/components/Loading/index.vue';
 	import emptyPage from '@/components/emptyPage.vue'
 	// #ifdef MP || APP
-	import NavBar from '@/components/NavBar.vue';
+	import NavBar from '../components/NavBar.vue';
 	// #endif
 	import {
 		HTTP_REQUEST_URL

@@ -3,7 +3,15 @@
 		"autoscan": true,
 		"custom": {}
 	},
-	"pages": [ //pages数组中第一项表示应用启动页 - 仅保留4个tabbar页面在主包
+	"pages": [ //pages数组中第一项表示应用启动页
+		{
+			"path": "pages/guide/index",
+			"style": {
+				"app-plus": {
+					"titleNView": false //禁用原生导航栏
+				}
+			}
+		},
 		{
 			"path": "pages/index/index",
 			"style": {
@@ -18,6 +26,20 @@
 						"page-design": "view"
 					}
 				}
+			}
+		},
+		{
+			"path": "pages/order_addcart/order_addcart",
+			"style": {
+				"navigationBarTitleText": "购物车",
+				"app-plus": {
+					// #ifdef APP-PLUS
+					"titleNView": {
+						"type": "default"
+					}
+					// #endif
+				}
+
 			}
 		},
 		{
@@ -40,6 +62,36 @@
 			}
 		},
 		{
+			"path": "pages/goods_cate/goods_cate",
+			"style": {
+				"navigationBarTitleText": "商品分类",
+				"app-plus": {
+					// #ifdef APP-PLUS
+					"titleNView": {
+						"type": "default"
+					}
+					// #endif
+				}
+
+			}
+		},
+		{
+			"path": "pages/goods_list/index",
+			"style": {
+				"navigationBarTitleText": "活动"
+			}
+		},
+		{
+			"path": "pages/index/star",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
 			"path": "pages/reservation/list",
 			"style": {
 				"navigationBarTitleText": "预约",
@@ -58,22 +110,11 @@
 				"navigationBarTitleText": "活动"
 			}
 		}
+
 	],
 	// 模块分包
 	"subPackages": [
 			{
-			"root": "pages/startup",
-			"name": "startup",
-			"pages": [{
-				"path": "guide/index",
-				"style": {
-					"app-plus": {
-						"titleNView": false
-					}
-				}
-			}]
-		},
-		{
 			"root": "pages/goods_details",
 			"name": "goods_details",
 			"pages": [{
@@ -139,26 +180,9 @@
 			"root": "pages/goods",
 			"name": "goods",
 			"pages": [ {
-					"path": "goods_cate/goods_cate",
-					"style": {
-						"navigationBarTitleText": "商品分类",
-						"app-plus": {
-							// #ifdef APP-PLUS
-							"titleNView": {
-								"type": "default"
-							}
-							// #endif
-						}
-					}
-				}, {
 					"path": "goods_list/index",
 					"style": {
-						"navigationBarTitleText": "活动"
-					}
-				}, {
-					"path": "order_addcart/order_addcart",
-					"style": {
-						"navigationBarTitleText": "购物车",
+						"navigationBarTitleText": "商品列表",
 						"app-plus": {
 							// #ifdef APP-PLUS
 							"titleNView": {
@@ -406,16 +430,6 @@
 			"root": "pages/users",
 			"name": "users",
 			"pages": [{
-					"path": "star",
-					"style": {
-						"navigationBarTitleText": "",
-						"navigationStyle": "custom",
-						"app-plus": {
-							"scrollIndicator": "none"
-						}
-					}
-				},
-				{
 					"path": "user_vip_areer/index",
 					"style": {
 						"navigationBarTitleText": "经验记录",

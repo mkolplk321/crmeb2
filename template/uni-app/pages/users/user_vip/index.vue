@@ -119,7 +119,7 @@
 							</view>
 							<view class="info">{{ $t(`购买商品可获得对应的经验值`) }}</view>
 						</view>
-						<navigator class="link" open-type="switchTab" url="/pages/goods_cate/goods_cate" hover-class="none">{{ $t(`去购买`) }}</navigator>
+						<navigator class="link" url="/pages/goods/goods_cate/goods_cate" hover-class="none">{{ $t(`去购买`) }}</navigator>
 					</view>
 					<view class="item acea-row row-middle">
 						<view class="text">

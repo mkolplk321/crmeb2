@@ -257,7 +257,7 @@
 <script>
 import customForm from "../../components/customForm";
 // #ifdef MP || APP
-import NavBar from "@/components/NavBar.vue";
+import NavBar from "../../components/NavBar.vue";
 // #endif
 import { OrderDetail } from "@/api/admin";
 import { isMoney } from "@/utils/validate.js";

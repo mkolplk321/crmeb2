@@ -44,7 +44,7 @@
             </template>
             <BaseBadge
               v-if="
-                item.link === '/pages/order_addcart/order_addcart' &&
+                item.link === '/pages/goods/order_addcart/order_addcart' &&
                 cartNum > 0
               "
               class="uni-badge-left-margin"

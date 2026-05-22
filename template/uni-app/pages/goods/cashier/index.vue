@@ -41,7 +41,7 @@
 
 <script>
 	import countDown from '@/components/countDown';
-	import numberScroll from '@/components/numberScroll.vue'
+	import numberScroll from '../components/numberScroll.vue'
 	import {
 		getCashierOrder,
 		orderPay

@@ -70,7 +70,7 @@
 		HTTP_REQUEST_URL
 	} from '@/config/app';
 	// #ifdef MP
-	import NavBar from '@/components/NavBar.vue'
+	import NavBar from '../components/NavBar.vue'
 	// #endif
 	import emptyPage from '@/components/emptyPage.vue'
 	export default {
