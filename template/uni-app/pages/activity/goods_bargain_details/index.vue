@@ -139,11 +139,11 @@
 			<view class="goodsDetails">
 				<view class="title acea-row row-center-wrapper">
 					<view class="pictrue">
-						<image src="/images/left.png"></image>
+						<image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/left.png"></image>
 					</view>
 					<view class="titleCon">{{ $t(`商品详情`) }}</view>
 					<view class="pictrue on">
-						<image src="/images/left.png"></image>
+						<image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/left.png"></image>
 					</view>
 				</view>
 				<view class="conter">
@@ -154,11 +154,11 @@
 			<view class="goodsDetails">
 				<view class="title acea-row row-center-wrapper">
 					<view class="pictrue">
-						<image src="/images/left.png"></image>
+						<image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/left.png"></image>
 					</view>
 					<view class="titleCon">{{ $t(`砍价规则`) }}</view>
 					<view class="pictrue on">
-						<image src="/images/left.png"></image>
+						<image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/left.png"></image>
 					</view>
 				</view>
 				<view class="conter">

@@ -148,7 +148,7 @@
 			height: 270rpx;
 			border-top-left-radius: 10rpx;
 			border-top-right-radius: 10rpx;
-			background-image: url(../static/address.png);
+			background-image: url(https://goyoto.oss-cn-beijing.aliyuncs.com/images/address.png);
 			background-repeat: round;
 			background-color: #E93323;
 

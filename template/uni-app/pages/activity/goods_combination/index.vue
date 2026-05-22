@@ -45,7 +45,7 @@
 						</view>
 						<view class="bnt acea-row row-center-wrapper" v-if="item.stock>0&&item.quota>0">
 							<view class="light">
-								<image src="../static/lightning.png"></image>
+								<image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/lightning.png"></image>
 							</view>
 							<view class="num">{{item.people}}{{$t(`人团`)}}</view>
 							<view class="go">{{$t(`去拼团`)}}</view>

@@ -11,7 +11,17 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://goyoto.oss-cn-beijing.aliyuncs.com/images/support.png\")",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://goyoto.oss-cn-beijing.aliyuncs.com/images/extracted/index_0.jpg\")",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://goyoto.oss-cn-beijing.aliyuncs.com/images/extracted/static_css_style.scss_0.png\")",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash([ -f \"components/diyComponents/$f.vue\" ])",
+      "Bash(sed -i '' 's|from \"./__TRACKED_VAR__.vue\"|from \"@/components/diyComponents/__TRACKED_VAR__.vue\"|g' pages/goods_details/diyComponents/pageDesign.vue pages/annex/diyComponents/pageDesign.vue)",
+      "Bash(sed -i '' 's|from \"@/components/diyComponents/pageDesign.vue\"|from \"./diyComponents/pageDesign.vue\"|g' pages/goods_details/index.vue)",
+      "Bash(sed -i '' 's|from \"@/components/diyComponents/productBottom.vue\"|from \"./diyComponents/productBottom.vue\"|g' pages/goods_details/index.vue)",
+      "Bash(sed -i '' 's|from \"./news.vue\"|from \"@/components/diyComponents/news.vue\"|g' pages/goods_details/diyComponents/pageDesign.vue pages/annex/diyComponents/pageDesign.vue)",
+      "Bash(sed -i '' 's|from \"./promotionList.vue\"|from \"@/components/diyComponents/promotionList.vue\"|g' pages/goods_details/diyComponents/pageDesign.vue pages/annex/diyComponents/pageDesign.vue)",
+      "Bash(curl -s -o /dev/null -w '%{http_code}' https://goyoto.oss-cn-beijing.aliyuncs.com/images/__TRACKED_VAR__)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://goyoto.oss-cn-beijing.aliyuncs.com/images/address.png\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://goyoto.oss-cn-beijing.aliyuncs.com/images/lightning.png\")"
     ]
   }
 }

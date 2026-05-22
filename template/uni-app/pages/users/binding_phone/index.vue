@@ -5,7 +5,7 @@
 		<!-- #ifdef MP -->
 		<view class="title-bar" style="height: 43px;">
 			<view class="icon" @click="back" v-if="!isHome">
-				<image src="../static/left.png"></image>
+				<image src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/left.png"></image>
 			</view>
 			<view class="icon" @click="home" v-else>
 				<image src="../static/home.png"></image>
