@@ -83,9 +83,9 @@
 </template>
 
 <script>
-import orderGoods from '@/components/orderGoods';
+import orderGoods from '../components/orderGoods';
 import colors from '@/mixins/color';
-import payment from '@/components/payment';
+import payment from '../components/payment';
 import home from '@/components/home/index.vue';
 import { friendDetail } from '@/api/user.js';
 import { HTTP_REQUEST_URL } from '@/config/app.js';

@@ -325,9 +325,9 @@
 		CACHE_LONGITUDE,
 		CACHE_LATITUDE
 	} from '@/config/cache.js';
-	import couponListWindow from '@/components/couponListWindow';
+	import couponListWindow from '../components/couponListWindow';
 	import addressWindow from '@/components/addressWindow';
-	import orderGoods from '@/components/orderGoods';
+	import orderGoods from '../components/orderGoods';
 	import home from '@/components/home';
 	import invoicePicker from '../components/invoicePicker/index.vue';
 	import {
@@ -339,7 +339,7 @@
 	// #ifdef MP
 	import authorize from '@/components/Authorize';
 	// #endif
-	import payment from '@/components/payment';
+	import payment from '../components/payment';
 	import colors from "@/mixins/color";
 	import Debounce from "@/mixins/debounce";
 	export default {

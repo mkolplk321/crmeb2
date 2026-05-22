@@ -144,7 +144,7 @@ import Loading from "@/components/Loading/index.vue";
 import Cache from "@/utils/cache";
 import appUpdate from "@/components/update/app-update.vue";
 import { applyTheme } from "@/utils/theme.js";
-import PageDesign from "@/components/diyComponents/pageDesign.vue";
+import PageDesign from "../diyComponents/pageDesign.vue";
 
 export default {
   computed: {

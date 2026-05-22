@@ -261,7 +261,7 @@
 		imageBase64
 	} from '@/api/public';
 	import productConSwiper from '../components/productConSwiper';
-	import couponListWindow from '@/components/couponListWindow';
+	import couponListWindow from '../components/couponListWindow';
 	import productWindow from '@/components/productWindow';
 	import userEvaluation from '@/components/userEvaluation';
 	import shareRedPackets from '@/components/shareRedPackets';
@@ -273,7 +273,7 @@
 	// #endif
 	import colors from "@/mixins/color";
 	import {HTTP_REQUEST_URL} from '@/config/app';
-	import cusPreviewImg from "@/components/cusPreviewImg/index.vue";
+	import cusPreviewImg from "../components/cusPreviewImg/index.vue";
 	let app = getApp();
 	export default {
 		components: {

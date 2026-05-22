@@ -298,7 +298,7 @@
 </template>
 
 <script>
-import commonWrapper from "./commonWrapper.vue";
+import commonWrapper from "@/components/diyComponents/commonWrapper.vue";
 import { mapGetters } from "vuex";
 import { getLiveList } from "@/api/api.js";
 export default {

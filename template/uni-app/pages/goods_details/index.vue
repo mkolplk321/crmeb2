@@ -276,9 +276,9 @@ import { getCartCounts } from "@/api/order.js";
 import { toLogin } from "@/libs/login.js";
 import { mapGetters } from "vuex";
 
-import cusPreviewImg from "@/components/cusPreviewImg/index.vue";
-import swiperPrevie from "@/components/cusPreviewImg/swiperPrevie.vue";
-import couponListWindow from "@/components/couponListWindow";
+import cusPreviewImg from "./components/cusPreviewImg/index.vue";
+import swiperPrevie from "./components/cusPreviewImg/swiperPrevie.vue";
+import couponListWindow from "./components/couponListWindow";
 import productWindow from "@/components/productWindow";
 import shareRedPackets from "@/components/shareRedPackets";
 import kefuIcon from "@/components/kefuIcon";
@@ -298,8 +298,8 @@ import { sharePoster } from "@/mixins/sharePoster";
 import homeList from "@/components/homeList";
 import specs from "./components/specs/index.vue";
 import serviceModal from "./components/serviceModal/index.vue";
-import PageDesign from "@/components/diyComponents/pageDesign.vue";
-import productBottom from "@/components/diyComponents/productBottom.vue";
+import PageDesign from "./diyComponents/pageDesign.vue";
+import productBottom from "./diyComponents/productBottom.vue";
 export default {
   components: {
     couponListWindow,

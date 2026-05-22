@@ -83,7 +83,7 @@
 	// #endif
 	import home from '@/components/home';
 	import colors from "@/mixins/color";
-	import payment from '@/components/payment';
+	import payment from '../components/payment';
 	import {
 		basicConfig
 	} from '@/api/public.js'

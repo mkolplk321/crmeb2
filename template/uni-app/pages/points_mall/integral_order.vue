@@ -103,9 +103,9 @@
 		CACHE_LONGITUDE,
 		CACHE_LATITUDE
 	} from '@/config/cache.js';
-	import couponListWindow from '@/components/couponListWindow';
+	import couponListWindow from './components/couponListWindow';
 	import addressWindow from '@/components/addressWindow';
-	import orderGoods from '@/components/orderGoods';
+	import orderGoods from './components/orderGoods';
 	import home from '@/components/home';
 	import {
 		toLogin

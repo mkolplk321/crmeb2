@@ -138,7 +138,7 @@
 
 <script>
 import home from '@/components/home';
-import payment from '@/components/payment';
+import payment from '../components/payment';
 import { mapGetters } from 'vuex';
 import { memberCard, memberCardDraw, memberCardCreate, groomList, memberOverdueTime } from '@/api/user.js';
 import { toLogin } from '@/libs/login.js';

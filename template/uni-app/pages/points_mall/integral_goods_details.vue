@@ -207,7 +207,7 @@ import { getUserInfo } from "@/api/user.js";
 import { TOKENNAME, HTTP_REQUEST_URL } from "@/config/app.js";
 // #endif
 import colors from "@/mixins/color";
-import cusPreviewImg from "@/components/cusPreviewImg/index.vue";
+import cusPreviewImg from "./components/cusPreviewImg/index.vue";
 import homeList from "@/components/homeList";
 let sysHeight = uni.getWindowInfo().statusBarHeight + "px";
 export default {

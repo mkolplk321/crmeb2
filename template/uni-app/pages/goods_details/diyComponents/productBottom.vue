@@ -227,7 +227,7 @@
 </template>
 
 <script>
-import commonWrapper from "./commonWrapper.vue";
+import commonWrapper from "@/components/diyComponents/commonWrapper.vue";
 import { getCustomer } from "@/utils/index.js";
 export default {
   name: "productBottom",
