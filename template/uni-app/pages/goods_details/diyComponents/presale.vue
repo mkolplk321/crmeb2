@@ -243,7 +243,7 @@
 </template>
 
 <script>
-import commonWrapper from "@/components/diyComponents/commonWrapper.vue";
+import commonWrapper from "./commonWrapper.vue";
 import { getAdvancellList } from "@/api/activity.js";
 export default {
   components: { commonWrapper },

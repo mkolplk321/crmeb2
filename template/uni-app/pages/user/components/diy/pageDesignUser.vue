@@ -54,11 +54,10 @@
               v-else-if="item.name == 'signIn'"
               :dataConfig="item"
             ></signIn>
-            <customComponent
-              v-else-if="item.name == 'customComponent'"
+            <              v-else-if="item.name == ''"
               :dataConfig="item"
               @changeLogin="changeLogin"
-            ></customComponent>
+            ></>
           </view>
         </block>
 
@@ -88,38 +87,18 @@ import pageFooter from "@/components/pageFooter/index.vue";
 import { HTTP_REQUEST_URL } from "@/config/app";
 import colors from "@/mixins/color";
 // 个人中心精简版：仅引入13个组件（完整版36个）
-import userInfor from "./userInfor.vue";
 import homeUserInfor from "./homeUserInfor.vue";
-import newVip from "./newVip.vue";
-import articleList from "./articleList.vue";
-import blankPage from "./blankPage.vue";
-import coupon from "./coupon.vue";
-import customerService from "./customerService.vue";
 import goodList from "./goodList.vue";
 import menus from "./menus.vue";
-import pictureCube from "./pictureCube.vue";
-import richText from "./richText.vue";
-import signIn from "./signIn.vue";
-import customComponent from "./customComponent.vue";
 
 export default {
   name: "PageDesignUser",
   components: {
     pageFooter,
-    userInfor,
-    homeUserInfor,
-    newVip,
-    articleList,
-    blankPage,
-    coupon,
-    customerService,
-    goodList,
+        homeUserInfor,
+                        goodList,
     menus,
-    pictureCube,
-    richText,
-    signIn,
-    customComponent,
-  },
+                  },
   mixins: [colors],
   props: {
     diyData: { type: Object, default: () => ({}) },

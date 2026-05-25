@@ -133,7 +133,7 @@
 </template>
 
 <script>
-import commonWrapper from "@/components/diyComponents/commonWrapper.vue";
+import commonWrapper from "./commonWrapper.vue";
 let statusBarHeight = uni.getWindowInfo().statusBarHeight;
 export default {
   name: "headerSerch",
