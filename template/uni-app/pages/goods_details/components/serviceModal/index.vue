@@ -1,6 +1,6 @@
 <script>
 // 服务保障
-import baseDrawer from '@/components/tuiDrawer/tui-drawer.vue';
+import baseDrawer from '../../components/tuiDrawer/tui-drawer.vue';
 export default {
 	props: {
 		ensureInfo: {

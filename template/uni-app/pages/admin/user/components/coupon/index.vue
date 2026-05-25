@@ -39,6 +39,7 @@
 </template>
 
 <script>
+import baseDrawer from "../../../components/tuiDrawer/tui-drawer.vue";
 import emptyPage from '@/components/emptyPage.vue';
 import {
 	getUserCoupon,
@@ -46,6 +47,7 @@ import {
 } from "@/api/admin";
 export default {
 	components: {
+    baseDrawer,
 		emptyPage
 	},
 	filters: {

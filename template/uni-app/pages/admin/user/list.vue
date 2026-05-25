@@ -223,6 +223,7 @@
 </template>
 
 <script>
+import baseDrawer from "../components/tuiDrawer/tui-drawer.vue";
 import Loading from "../components/Loading/index";
 import emptyPage from "@/components/emptyPage.vue";
 import footerPage from "../components/footerPage/index.vue";
@@ -239,6 +240,7 @@ import {
 } from "@/api/admin";
 export default {
   components: {
+    baseDrawer,
     editLable,
     editBalance,
     member,

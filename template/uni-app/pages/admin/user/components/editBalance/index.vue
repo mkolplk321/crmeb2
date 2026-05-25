@@ -33,6 +33,7 @@
 </template>
 
 <script>
+import baseDrawer from "../../../components/tuiDrawer/tui-drawer.vue";
 import {
 	postUserUpdateOther
 } from "@/api/admin";

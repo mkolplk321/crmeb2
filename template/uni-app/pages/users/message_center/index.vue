@@ -80,7 +80,7 @@
 	} from '@/api/user.js';
 	import colors from '@/mixins/color.js';
 	import home from '../components/home';
-	import tuiDrawer from '@/components/tuiDrawer/index.vue'
+	import tuiDrawer from '../components/tuiDrawer/index.vue'
 	import {
 		HTTP_REQUEST_URL
 	} from '@/config/app';

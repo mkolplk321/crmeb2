@@ -85,11 +85,12 @@
 </template>
 <script>
 import emptyPage from '@/components/emptyPage.vue';
-import baseDrawer from '@/components/tuiDrawer/tui-drawer.vue';
+import baseDrawer from '../../../components/tuiDrawer/tui-drawer.vue';
 
 import { getProductCate, postManageSaveCate } from '@/api/admin';
 export default {
     components: {
+    baseDrawer,
         emptyPage,
         baseDrawer
     },

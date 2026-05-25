@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import baseDrawer from '@/components/tuiDrawer/tui-drawer.vue';
+import baseDrawer from '../../components/tuiDrawer/tui-drawer.vue';
 export default {
 	props: {
 		specsInfo: {

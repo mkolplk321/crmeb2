@@ -67,9 +67,10 @@
 
 <script>
 import { postUpdateAttrs } from "@/api/admin";
-import baseDrawer from "@/components/tuiDrawer/tui-drawer.vue";
+import baseDrawer from "../../../components/tuiDrawer/tui-drawer.vue";
 export default {
   components: {
+    baseDrawer,
     baseDrawer,
   },
   props: {

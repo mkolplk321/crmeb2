@@ -22,9 +22,7 @@ Vue.prototype.$eventHub = new Vue();
 
 Vue.config.productionTip = false
 import easyLoadimage from '@/components/easy-loadimage/easy-loadimage.vue'
-import BaseDrawer from '@/components/tuiDrawer/tui-drawer.vue'
 Vue.component('easyLoadimage', easyLoadimage)
-Vue.component('baseDrawer', BaseDrawer)
 import ActivePermission from './libs/permission.js';
 Vue.prototype.$permission = ActivePermission;
 import {

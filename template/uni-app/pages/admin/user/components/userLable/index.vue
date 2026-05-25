@@ -39,6 +39,7 @@
 </template>
 
 <script>
+import baseDrawer from "../../../components/tuiDrawer/tui-drawer.vue";
 import emptyPage from '@/components/emptyPage.vue';
 import {
 	getUserLabel,
@@ -47,6 +48,7 @@ import {
 import { handleError } from "vue";
 export default {
 	components: {
+    baseDrawer,
 		emptyPage
 	},
 	props:{

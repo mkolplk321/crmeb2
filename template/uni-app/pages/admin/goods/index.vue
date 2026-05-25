@@ -195,7 +195,7 @@
 <script>
 import Loading from "../components/Loading/index";
 import emptyPage from "@/components/emptyPage.vue";
-import baseDrawer from "@/components/tuiDrawer/tui-drawer.vue";
+import baseDrawer from "../components/tuiDrawer/tui-drawer.vue";
 import footerPage from "../components/footerPage/index.vue";
 import editPrice from "./components/editPrice/index.vue";
 import editLable from "./components/label/index.vue";
@@ -204,6 +204,7 @@ import { goShopDetail } from "@/libs/order.js";
 import { adminProductList, productSetShow } from "@/api/admin";
 export default {
   components: {
+    baseDrawer,
     editPrice,
     editLable,
     classify,

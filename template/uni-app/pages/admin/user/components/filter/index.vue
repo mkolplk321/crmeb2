@@ -55,6 +55,7 @@
 </template>
 
 <script>
+import baseDrawer from "../../../components/tuiDrawer/tui-drawer.vue";
 	import {
 		getUserLabel
 	} from "@/api/admin";
