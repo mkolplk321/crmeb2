@@ -320,7 +320,7 @@
 
 <script>
 import commonWrapper from "./commonWrapper.vue";
-import countDown from "@/components/countDown";
+import countDown from "../components/countDown";
 import { getSeckillIndexTime, getSeckillList } from "@/api/activity.js";
 export default {
   options: {

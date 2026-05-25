@@ -45,13 +45,13 @@
 	</view>
 </template>
 <script>
-	import CountDown from '@/components/countDown';
+	import CountDown from './components/countDown';
 	import emptyPage from '@/components/emptyPage.vue';
 	import {
 		getIntegralOrderList
 	} from '@/api/activity';
 	import Loading from '@/components/Loading';
-	import home from '@/components/home';
+	import home from './components/home';
 	import colors from '@/mixins/color.js';
 	export default {
 		name: 'BargainRecord',

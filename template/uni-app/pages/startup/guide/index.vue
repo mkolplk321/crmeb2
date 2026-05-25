@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import guide from '@/components/guide/index.vue';
+import guide from '../components/guide/index.vue';
 import Cache from '@/utils/cache';
 import { getOpenAdv } from '@/api/api.js';
 export default {

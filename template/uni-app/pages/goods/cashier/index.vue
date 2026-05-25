@@ -40,7 +40,7 @@
 </template>
 
 <script>
-	import countDown from '@/components/countDown';
+	import countDown from '../components/countDown';
 	import numberScroll from '../components/numberScroll.vue'
 	import {
 		getCashierOrder,

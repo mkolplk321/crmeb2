@@ -70,7 +70,7 @@
 	import {
 		openPinkSubscribe
 	} from '../../../utils/SubscribeMessage.js';
-	import home from '@/components/home/index.vue'
+	import home from '../components/home/index.vue'
 	import colors from "@/mixins/color";
 	let app = getApp();
 	export default {

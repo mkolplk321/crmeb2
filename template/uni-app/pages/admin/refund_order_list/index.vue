@@ -146,7 +146,7 @@
 	import {
 		HTTP_REQUEST_URL
 	} from '@/config/app';
-import home from '@/components/home';
+import home from '../components/home';
 	export default {
 		name: "AdminOrderList",
 		components: {

@@ -49,7 +49,7 @@
 		getArticleDetails
 	} from '@/api/api.js';
 	import shareInfo from '../components/shareInfo/index.vue';
-	import home from '@/components/home';
+	import home from '../components/home';
 	import parser from "../components/jyf-parser/jyf-parser";
 	import colors from "@/mixins/color";
 	import {

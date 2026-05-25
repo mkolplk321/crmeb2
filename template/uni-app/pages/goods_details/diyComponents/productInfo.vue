@@ -384,7 +384,7 @@
 
 <script>
 import commonWrapper from "./commonWrapper.vue";
-import BaseTag from "@/components/BaseTag.vue";
+import BaseTag from "../components/BaseTag.vue";
 
 export default {
   name: "productInfo",

@@ -91,7 +91,7 @@
 </template>
 
 <script>
-	import home from '@/components/home';
+	import home from '../components/home';
 	import {
 		invoiceSave,
 		invoiceDetail

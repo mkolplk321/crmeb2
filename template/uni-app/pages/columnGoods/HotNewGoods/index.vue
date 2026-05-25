@@ -32,7 +32,7 @@
 </template>
 <script>
 	import emptyPage from '@/components/emptyPage.vue';
-	import GoodList from '@/components/goodList';
+	import GoodList from '../components/goodList';
 	import pageFooter from '@/components/pageFooter/index.vue';
 	import {
 		getGroomList
@@ -40,7 +40,7 @@
 	import {
 		goPage
 	} from '@/libs/order.js';
-	import home from '@/components/home/index.vue'
+	import home from '../components/home/index.vue'
 	import colors from "@/mixins/color";
 	export default {
 		name: 'HotNewGoods',

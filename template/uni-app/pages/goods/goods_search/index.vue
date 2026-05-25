@@ -58,9 +58,9 @@
 		searchList,
 		clearSearch
 	} from '@/api/api.js';
-	import goodList from '@/components/goodList';
-	import recommend from '@/components/recommend';
-	import home from '@/components/home';
+	import goodList from '../components/goodList';
+	import recommend from '../components/recommend';
+	import home from '../components/home';
 	import colors from "@/mixins/color";
 	import {
 		HTTP_REQUEST_URL

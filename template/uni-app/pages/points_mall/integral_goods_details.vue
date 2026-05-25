@@ -191,15 +191,15 @@
 const app = getApp();
 import { mapGetters } from "vuex";
 import { getIntegralProductDetail } from "@/api/activity.js";
-import productConSwiper from "@/components/productConSwiper";
+import productConSwiper from "./components/productConSwiper";
 import productWindow from "./component/productWindow.vue";
-import userEvaluation from "@/components/userEvaluation/index.vue";
-import kefuIcon from "@/components/kefuIcon";
+import userEvaluation from "./components/userEvaluation/index.vue";
+import kefuIcon from "./components/kefuIcon";
 // #ifdef MP
 import authorize from "@/components/Authorize";
 // #endif
 import parser from "./components/jyf-parser/jyf-parser";
-import countDown from "@/components/countDown";
+import countDown from "./components/countDown";
 import { imageBase64 } from "@/api/public";
 import { toLogin } from "@/libs/login.js";
 import { getUserInfo } from "@/api/user.js";
@@ -208,7 +208,7 @@ import { TOKENNAME, HTTP_REQUEST_URL } from "@/config/app.js";
 // #endif
 import colors from "@/mixins/color";
 import cusPreviewImg from "./components/cusPreviewImg/index.vue";
-import homeList from "@/components/homeList";
+import homeList from "./components/homeList";
 let sysHeight = uni.getWindowInfo().statusBarHeight + "px";
 export default {
   computed: mapGetters(["isLogin"]),

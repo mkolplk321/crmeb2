@@ -540,7 +540,7 @@
 	import {
 		openOrderRefundSubscribe
 	} from '@/utils/SubscribeMessage.js';
-	import home from '@/components/home';
+	import home from '../components/home';
 	import payment from '../components/payment';
 	import orderGoods from "../components/orderGoods";
 	import ClipboardJS from "@/plugin/clipboard/clipboard.js";
