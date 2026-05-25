@@ -1750,7 +1750,7 @@
 	"preloadRule": {
 		"pages/index/index": {
 			"network": "all",
-			"packages": ["pages/users", "pages/annex", "pages/goods_details"]
+			"packages": ["pages/users"]
 		},
 		"pages/special/index": {
 			"network": "all",
