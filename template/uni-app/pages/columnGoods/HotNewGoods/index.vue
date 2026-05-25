@@ -40,7 +40,7 @@
 	import {
 		goPage
 	} from '@/libs/order.js';
-	import home from '@/components/home/index.vue'
+	import home from '../components/home/index.vue'
 	import colors from "@/mixins/color";
 	export default {
 		name: 'HotNewGoods',

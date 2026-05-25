@@ -79,7 +79,7 @@
 		getSeckillIndexTime,
 		getPresellList
 	} from '../../../api/activity.js';
-	import home from '@/components/home/index.vue'
+	import home from '../components/home/index.vue'
 	import colors from "@/mixins/color";
 	import {
 		HTTP_REQUEST_URL

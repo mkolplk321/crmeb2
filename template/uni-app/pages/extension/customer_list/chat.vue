@@ -227,7 +227,7 @@ const chunk = function (arr, num) {
   return ret;
 };
 import emojiList from "@/utils/emoji";
-import Loading from "@/components/Loading";
+import Loading from "../components/Loading";
 import colors from "@/mixins/color";
 import { HTTP_REQUEST_URL } from "@/config/app.js";
 export default {

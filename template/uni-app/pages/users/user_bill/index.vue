@@ -51,7 +51,7 @@
 	import authorize from '@/components/Authorize';
 	// #endif
 	import emptyPage from '@/components/emptyPage.vue';
-	import home from '@/components/home';
+	import home from '../components/home';
 	import colors from "@/mixins/color";
 	export default {
 		components: {

@@ -136,7 +136,7 @@
 		agreeExpress,
 		adminRefundList,
 	} from "@/api/admin";
-	import Loading from '@/components/Loading/index'
+	import Loading from '../components/Loading/index'
 	import PriceChange from '../components/PriceChange/index.vue'
 	import emptyPage from '@/components/emptyPage.vue'
 	import NavBar from '../components/NavBar.vue'
@@ -146,7 +146,7 @@
 	import {
 		HTTP_REQUEST_URL
 	} from '@/config/app';
-import home from '@/components/home';
+import home from '../components/home';
 	export default {
 		name: "AdminOrderList",
 		components: {

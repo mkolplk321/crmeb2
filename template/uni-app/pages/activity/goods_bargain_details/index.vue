@@ -270,7 +270,7 @@
 </template>
 
 <script>
-import zbCode from '@/components/zb-code/zb-code.vue';
+import zbCode from '../components/zb-code/zb-code.vue';
 import bargainPoster from '../poster-poster/index.vue';
 import { getBargainDetail, postBargainStartUser, postBargainStart, postBargainHelp, postBargainHelpList, postBargainShare } from '../../../api/activity.js';
 import { colorChange } from '@/api/api.js';
@@ -281,9 +281,9 @@ import { mapGetters } from 'vuex';
 // #ifdef MP
 import authorize from '@/components/Authorize';
 // #endif
-import countDown from '@/components/countDown';
-import home from '@/components/home';
-import parser from '@/components/jyf-parser/jyf-parser';
+import countDown from '../components/countDown';
+import home from '../components/home';
+import parser from '../components/jyf-parser/jyf-parser';
 import { TOKENNAME, HTTP_REQUEST_URL } from '@/config/app.js';
 const app = getApp();
 import colors from '@/mixins/color';

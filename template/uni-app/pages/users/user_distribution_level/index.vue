@@ -120,7 +120,7 @@
 	import {
 		mapGetters
 	} from "vuex";
-	import recommend from '@/components/recommend';
+	import recommend from '../components/recommend';
 	import colors from '@/mixins/color.js';
 	export default {
 		components: {

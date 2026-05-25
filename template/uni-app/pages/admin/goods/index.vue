@@ -193,7 +193,7 @@
 </template>
 
 <script>
-import Loading from "@/components/Loading/index";
+import Loading from "../components/Loading/index";
 import emptyPage from "@/components/emptyPage.vue";
 import baseDrawer from "@/components/tuiDrawer/tui-drawer.vue";
 import footerPage from "../components/footerPage/index.vue";

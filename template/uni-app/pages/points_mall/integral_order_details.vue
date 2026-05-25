@@ -121,7 +121,7 @@
 	import {
 		getUserInfo
 	} from '@/api/user.js';
-	import home from '@/components/home';
+	import home from './components/home';
 	import orderGoods from "./components/orderGoods";
 	import ClipboardJS from "@/plugin/clipboard/clipboard.js";
 	import {

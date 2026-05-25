@@ -131,8 +131,8 @@
 	</div>
 </template>
 <script>
-	import CountDown from '@/components/countDown';
-	import ProductWindow from '@/components/productWindow';
+	import CountDown from '../components/countDown';
+	import ProductWindow from '../components/productWindow';
 	import util from '../../../utils/util.js';
 	import {
 		toLogin
@@ -150,7 +150,7 @@
 	// #ifdef MP
 	import authorize from '@/components/Authorize';
 	// #endif
-	import home from '@/components/home';
+	import home from '../components/home';
 	const NAME = 'GroupRule';
 	// #ifdef APP-PLUS
 	import {

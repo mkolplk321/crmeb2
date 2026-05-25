@@ -49,7 +49,7 @@
 	</view>
 </template>
 <script>
-	import CountDown from "@/components/countDown";
+	import CountDown from "../components/countDown";
 	import emptyPage from '@/components/emptyPage.vue'
 	import {
 		getBargainUserList,
@@ -58,8 +58,8 @@
 	import {
 		getUserInfo
 	} from '@/api/user.js';
-	import Loading from "@/components/Loading";
-	import home from '@/components/home';
+	import Loading from "../components/Loading";
+	import home from '../components/home';
 	import colors from "@/mixins/color";
 	export default {
 		name: "BargainRecord",

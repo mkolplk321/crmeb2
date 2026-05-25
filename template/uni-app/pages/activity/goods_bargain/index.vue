@@ -44,7 +44,7 @@ let app = getApp();
 import { getBargainList } from '@/api/activity.js';
 import { openBargainSubscribe } from '@/utils/SubscribeMessage.js';
 import { getUserInfo } from '@/api/user.js';
-import home from '@/components/home';
+import home from '../components/home';
 import { toLogin } from '@/libs/login.js';
 import { colorChange } from '@/api/api.js';
 import { mapGetters } from 'vuex';

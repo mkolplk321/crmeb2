@@ -63,7 +63,7 @@
 	// #ifdef MP
 	import authorize from '@/components/Authorize';
 	// #endif
-	import home from '@/components/home';
+	import home from '../../components/home';
 	export default {
 		components: {
 			// #ifdef MP

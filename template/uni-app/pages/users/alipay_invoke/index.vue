@@ -39,7 +39,7 @@
 	import {
 		mapGetters
 	} from 'vuex';
-	import home from '@/components/home/index.vue';
+	import home from '../components/home/index.vue';
 	import {
 		aliPay
 	} from '@/api/order';
