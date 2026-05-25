@@ -65,9 +65,7 @@ import pageFooter from "@/components/pageFooter/index.vue";
 import { getCustomer } from "@/utils/index.js";
 import editUserModal from "@/components/eidtUserModal/index.vue";
 import couponWindow from "@/components/couponWindow/index";
-import waterfallsFlow from "@/components/WaterfallsFlow/WaterfallsFlow.vue";
 import emptyPage from "@/components/emptyPage.vue";
-import Loading from "@/components/Loading/index.vue";
 import { getCrmebCopyRight } from "@/api/api.js";
 import { goShopDetail } from "@/libs/order.js";
 import PageDesign from "./components/diy/pageDesignUser.vue";
@@ -78,10 +76,8 @@ export default {
     editUserModal,
     PageDesign,
     couponWindow,
-    waterfallsFlow,
-    emptyPage,
-    Loading,
-  },
+        emptyPage,
+      },
   // computed: mapGetters(['isLogin','cartNum']),
   computed: {
     pdHeights() {

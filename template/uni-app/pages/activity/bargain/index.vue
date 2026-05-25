@@ -58,7 +58,7 @@
 	import {
 		getUserInfo
 	} from '@/api/user.js';
-	import Loading from "@/components/Loading";
+	import Loading from "../components/Loading";
 	import home from '../components/home';
 	import colors from "@/mixins/color";
 	export default {

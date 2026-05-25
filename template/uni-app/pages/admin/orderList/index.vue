@@ -165,7 +165,7 @@
 	// import {
 	// 	erpConfig
 	// } from "@/api/esp.js";
-	import Loading from '@/components/Loading/index'
+	import Loading from '../components/Loading/index'
 	import PriceChange from '../components/PriceChange/index.vue'
 	import footerPage from '../components/footerPage/index.vue'
 	import countDown from '../components/countDown/index.vue'

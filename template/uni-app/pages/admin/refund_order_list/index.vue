@@ -136,7 +136,7 @@
 		agreeExpress,
 		adminRefundList,
 	} from "@/api/admin";
-	import Loading from '@/components/Loading/index'
+	import Loading from '../components/Loading/index'
 	import PriceChange from '../components/PriceChange/index.vue'
 	import emptyPage from '@/components/emptyPage.vue'
 	import NavBar from '../components/NavBar.vue'

@@ -171,7 +171,7 @@
 		deliveryOrderList,
 		orderWriteoffInfo
 	} from "@/api/admin";
-	import Loading from '@/components/Loading/index.vue';
+	import Loading from '../components/Loading/index.vue';
 	import emptyPage from '@/components/emptyPage.vue'
 	// #ifdef MP || APP
 	import NavBar from '../components/NavBar.vue';
