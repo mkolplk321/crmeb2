@@ -266,7 +266,7 @@
 	import userEvaluation from '@/components/userEvaluation';
 	import shareRedPackets from '@/components/shareRedPackets';
 	import kefuIcon from '@/components/kefuIcon';
-	import parser from '@/components/jyf-parser/jyf-parser';
+	import parser from '../components/jyf-parser/jyf-parser';
 	import ClipboardJS from '@/plugin/clipboard/clipboard.js';
 	// #ifdef MP
 	import authorize from '@/components/Authorize';

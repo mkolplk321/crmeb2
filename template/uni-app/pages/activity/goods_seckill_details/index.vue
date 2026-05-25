@@ -444,7 +444,7 @@ import { TOKENNAME } from "@/config/app.js";
 // #endif
 import colors from "@/mixins/color.js";
 import menuIcon from "@/components/menuIcon.vue";
-import parser from "@/components/jyf-parser/jyf-parser";
+import parser from "../components/jyf-parser/jyf-parser";
 import cusPreviewImg from "../components/cusPreviewImg/index.vue";
 import { sharePoster } from "@/mixins/sharePoster";
 import { HTTP_REQUEST_URL } from "@/config/app";

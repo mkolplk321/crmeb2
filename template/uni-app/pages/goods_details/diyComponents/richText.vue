@@ -21,7 +21,7 @@
 
 <script>
 import commonWrapper from "./commonWrapper.vue";
-import parser from "@/components/jyf-parser/jyf-parser";
+import parser from "../components/jyf-parser/jyf-parser";
 export default {
   name: "richText",
   props: {

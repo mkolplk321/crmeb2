@@ -198,7 +198,7 @@ import kefuIcon from "@/components/kefuIcon";
 // #ifdef MP
 import authorize from "@/components/Authorize";
 // #endif
-import parser from "@/components/jyf-parser/jyf-parser";
+import parser from "./components/jyf-parser/jyf-parser";
 import countDown from "@/components/countDown";
 import { imageBase64 } from "@/api/public";
 import { toLogin } from "@/libs/login.js";

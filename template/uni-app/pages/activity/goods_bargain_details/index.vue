@@ -283,7 +283,7 @@ import authorize from '@/components/Authorize';
 // #endif
 import countDown from '@/components/countDown';
 import home from '@/components/home';
-import parser from '@/components/jyf-parser/jyf-parser';
+import parser from '../components/jyf-parser/jyf-parser';
 import { TOKENNAME, HTTP_REQUEST_URL } from '@/config/app.js';
 const app = getApp();
 import colors from '@/mixins/color';
