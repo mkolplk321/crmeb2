@@ -53,7 +53,7 @@
 </template>
 
 <script>
-	import home from '../components/home';
+	import home from '@/components/home';
 	import emptyPage from '@/components/emptyPage';
 	import {
 		getNewOrderList

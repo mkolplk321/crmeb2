@@ -45,7 +45,7 @@
 
 <script>
 import { orderVerific } from '@/api/admin';
-import home from '../components/home';
+import home from '@/components/home';
 import colors from '@/mixins/color.js';
 import { mapGetters } from 'vuex';
 import { toLogin } from '@/libs/login.js';

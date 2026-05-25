@@ -264,8 +264,8 @@ import {
 import { getProductHot, collectAll, getProductDetail } from "@/api/store.js";
 import { toLogin } from "@/libs/login.js";
 import { mapGetters } from "vuex";
-import recommend from "../components/recommend";
-import productWindow from "../components/productWindow";
+import recommend from "@/components/recommend";
+import productWindow from "@/components/productWindow";
 // #ifdef MP
 import authorize from "@/components/Authorize";
 // #endif

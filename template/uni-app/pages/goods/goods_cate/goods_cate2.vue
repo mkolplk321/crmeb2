@@ -118,7 +118,7 @@
 <script>
 import { getCategoryList, getProductslist, getAttr, postCartNum } from '@/api/store.js';
 import { vcartList, getCartCounts, cartDel } from '@/api/order.js';
-import productWindow from '../components/productWindow';
+import productWindow from '@/components/productWindow';
 import goodList from '../components/catGoodList';
 import cartList from '../components/cartList';
 import { mapGetters } from 'vuex';

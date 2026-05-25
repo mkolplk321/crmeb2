@@ -142,7 +142,7 @@
 <script>
 import { getOrderList, orderData, orderCancel, orderDel, orderPay } from '@/api/order.js';
 import { openOrderSubscribe } from '@/utils/SubscribeMessage.js';
-import home from '../components/home';
+import home from '@/components/home';
 import { toLogin } from '@/libs/login.js';
 import { mapGetters } from 'vuex';
 import { HTTP_REQUEST_URL } from '@/config/app';

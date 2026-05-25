@@ -475,28 +475,28 @@ import { mapGetters } from "vuex";
 // #ifdef MP
 import authorize from "@/components/Authorize";
 // #endif
-import productConSwiper from "../components/productConSwiper/index.vue";
+import productConSwiper from "@/components/productConSwiper/index.vue";
 import swiperPrevie from "../components/cusPreviewImg/swiperPrevie.vue";
 import { toLogin } from "@/libs/login.js";
 import { getCombinationDetail, scombinationCode } from "@/api/activity.js";
 import { postCartAdd, collectAdd, collectDel } from "@/api/store.js";
 import { imageBase64 } from "@/api/public";
-import productWindow from "../components/productWindow/index.vue";
-import userEvaluation from "../components/userEvaluation/index.vue";
-import countDown from "../components/countDown/index.vue";
-import kefuIcon from "../components/kefuIcon";
+import productWindow from "@/components/productWindow/index.vue";
+import userEvaluation from "@/components/userEvaluation/index.vue";
+import countDown from "@/components/countDown/index.vue";
+import kefuIcon from "@/components/kefuIcon";
 import { getProductCode } from "@/api/store.js";
 import { getUserInfo } from "@/api/user.js";
 // #ifdef APP-PLUS
 import { TOKENNAME } from "@/config/app.js";
 // #endif
 import colors from "@/mixins/color.js";
-import parser from "../components/jyf-parser/jyf-parser";
+import parser from "@/components/jyf-parser/jyf-parser";
 import cusPreviewImg from "../components/cusPreviewImg/index.vue";
-import menuIcon from "../components/menuIcon.vue";
+import menuIcon from "@/components/menuIcon.vue";
 import { sharePoster } from "@/mixins/sharePoster";
 import { HTTP_REQUEST_URL } from "@/config/app";
-import homeList from "../components/homeList";
+import homeList from "@/components/homeList";
 let sysHeight = uni.getWindowInfo().statusBarHeight + "px";
 export default {
   components: {

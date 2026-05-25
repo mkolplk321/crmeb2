@@ -75,8 +75,8 @@
 	import {
 		toLogin
 	} from '@/libs/login.js';
-	import recommend from '../components/recommend';
-	import home from '../components/home';
+	import recommend from '@/components/recommend';
+	import home from '@/components/home';
 	import colors from '@/mixins/color.js';
 	import {HTTP_REQUEST_URL} from '@/config/app';
 	export default {

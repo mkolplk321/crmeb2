@@ -165,10 +165,10 @@
 	// import {
 	// 	erpConfig
 	// } from "@/api/esp.js";
-	import Loading from '../components/Loading/index'
+	import Loading from '@/components/Loading/index'
 	import PriceChange from '../components/PriceChange/index.vue'
 	import footerPage from '../components/footerPage/index.vue'
-	import countDown from '../components/countDown/index.vue'
+	import countDown from '@/components/countDown/index.vue'
 	import emptyPage from '@/components/emptyPage.vue'
 	// #ifdef MP || APP-PLUS
 	import NavBar from '../components/NavBar.vue';

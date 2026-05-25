@@ -147,11 +147,11 @@
 	import {
 		mapGetters
 	} from "vuex";
-	import recommend from '../components/recommend/index';
+	import recommend from '@/components/recommend/index';
 	// #ifdef MP
 	import authorize from '@/components/Authorize';
 	// #endif
-	import home from '../components/home';
+	import home from '@/components/home';
 	import colors from "@/mixins/color";
 	export default {
 		components: {

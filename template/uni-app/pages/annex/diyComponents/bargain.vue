@@ -251,7 +251,7 @@
 </template>
 
 <script>
-import commonWrapper from "./commonWrapper.vue";
+import commonWrapper from "@/components/diyComponents/commonWrapper.vue";
 import { openBargainSubscribe } from "@/utils/SubscribeMessage.js";
 import { getBargainList } from "@/api/activity.js";
 export default {

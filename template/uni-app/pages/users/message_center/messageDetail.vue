@@ -20,7 +20,7 @@
 	import {
 		getMsgDetails
 	} from '@/api/user.js'
-	import home from '../components/home';
+	import home from '@/components/home';
 	export default {
 		components: {
 			home

@@ -214,7 +214,7 @@
 	import {
 		mapGetters
 	} from "vuex";
-	import parser from "../components/jyf-parser/jyf-parser";
+	import parser from "@/components/jyf-parser/jyf-parser";
 	// #ifdef MP
 	import authorize from '@/components/Authorize';
 	// #endif

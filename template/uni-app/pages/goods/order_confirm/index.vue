@@ -326,9 +326,9 @@
 		CACHE_LATITUDE
 	} from '@/config/cache.js';
 	import couponListWindow from '../components/couponListWindow';
-	import addressWindow from '../components/addressWindow';
+	import addressWindow from '@/components/addressWindow';
 	import orderGoods from '../components/orderGoods';
-	import home from '../components/home';
+	import home from '@/components/home';
 	import invoicePicker from '../components/invoicePicker/index.vue';
 	import {
 		toLogin

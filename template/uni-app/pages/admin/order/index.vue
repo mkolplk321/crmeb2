@@ -81,7 +81,7 @@
 		getStatisticsInfo,
 		getStatisticsMonth
 	} from "@/api/admin";
-	import Loading from '../components/Loading/index.vue'
+	import Loading from '@/components/Loading/index.vue'
 	export default {
 		name: 'adminOrder',
 		components: {

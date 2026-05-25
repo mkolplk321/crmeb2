@@ -66,14 +66,14 @@
 </template>
 
 <script>
-	import home from './components/home';
+	import home from '@/components/home';
 	import {
 		getProductHot
 	} from '@/api/store.js';
 	import {
 		getStoreIntegralList
 	} from '@/api/activity.js';
-	import recommend from './components/recommend';
+	import recommend from '@/components/recommend';
 	import {
 		mapGetters
 	} from "vuex";

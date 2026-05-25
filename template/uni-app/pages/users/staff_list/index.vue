@@ -117,9 +117,9 @@ import { mapGetters } from 'vuex';
 // #ifdef MP
 import authorize from '@/components/Authorize';
 // #endif
-import home from '../components/home';
+import home from '@/components/home';
 import colors from '@/mixins/color.js';
-import zbCode from '../components/zb-code/zb-code.vue';
+import zbCode from '@/components/zb-code/zb-code.vue';
 import { HTTP_REQUEST_URL } from '@/config/app.js';
 let app = getApp();
 export default {

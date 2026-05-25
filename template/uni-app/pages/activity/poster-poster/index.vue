@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import zbCode from '../components/zb-code/zb-code.vue';
+import zbCode from '@/components/zb-code/zb-code.vue';
 import { getBargainPoster, getCombinationPoster, getBargainPosterData, getCombinationPosterData } from '@/api/activity.js';
 import { getUserInfo, imgToBase, routineCode } from '@/api/user.js';
 // #ifdef APP-PLUS

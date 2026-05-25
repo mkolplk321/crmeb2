@@ -69,7 +69,7 @@
 	// #ifdef MP
 	import authorize from '@/components/Authorize';
 	// #endif
-	import home from '../components/home';
+	import home from '@/components/home';
 	import colors from '@/mixins/color.js';
 	export default {
 		components: {

@@ -223,7 +223,7 @@
 </template>
 
 <script>
-import Loading from "../components/Loading/index";
+import Loading from "@/components/Loading/index";
 import emptyPage from "@/components/emptyPage.vue";
 import footerPage from "../components/footerPage/index.vue";
 import editLable from "./components/userLable/index.vue";

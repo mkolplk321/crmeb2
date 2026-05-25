@@ -156,7 +156,7 @@ import { mapGetters } from 'vuex';
 // #ifdef MP
 import authorize from '@/components/Authorize';
 // #endif
-import recommend from '../components/recommend';
+import recommend from '@/components/recommend';
 export default {
 	components: {
 		recommend,

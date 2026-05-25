@@ -69,13 +69,13 @@
 <script>
 import { getLotteryData, startLottery, receiveLottery } from '@/api/lottery.js';
 import { getUserInfo } from '@/api/user.js';
-import zbCode from '../../components/zb-code/zb-code.vue';
+import zbCode from '@/components/zb-code/zb-code.vue';
 import gridsLottery from '../../components/lottery/index.vue';
 import showBox from '../components/showbox.vue';
 import noticeBar from '../components/noticeBar.vue';
 import lotteryAleart from '../components/lotteryAleart.vue';
 import userAddress from '../components/userAddress.vue';
-import home from '../../components/home';
+import home from '@/components/home';
 import { toLogin } from '@/libs/login.js';
 import { mapGetters } from 'vuex';
 import colors from '@/mixins/color.js';

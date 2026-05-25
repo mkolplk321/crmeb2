@@ -168,7 +168,7 @@ import {
   postCartNum,
 } from "@/api/store.js";
 import { vcartList, getCartCounts, cartDel } from "@/api/order.js";
-import productWindow from "../components/productWindow";
+import productWindow from "@/components/productWindow";
 import goodClass from "../components/goodClass";
 import cartList from "../components/cartList";
 import { mapGetters } from "vuex";

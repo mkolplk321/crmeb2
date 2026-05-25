@@ -139,7 +139,7 @@
 </template>
 
 <script>
-import commonWrapper from "./commonWrapper.vue";
+import commonWrapper from "@/components/diyComponents/commonWrapper.vue";
 import { getStoreIntegralList } from "@/api/activity.js";
 import { HTTP_REQUEST_URL } from "@/config/app";
 export default {

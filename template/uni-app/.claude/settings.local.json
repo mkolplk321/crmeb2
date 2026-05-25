@@ -26,11 +26,7 @@
       "Bash(sed -i '' '365s|.*|\t@import \"../static/fonts/font.scss\";|' pages/users/user_sgin/index.vue)",
       "Bash(sed -n '364,367p' pages/users/user_sgin/index.vue)",
       "Bash(node -e \"const fs=require\\('fs'\\); const t=fs.readFileSync\\('pages.json','utf8'\\).replace\\(/\\\\/\\\\/.*/g,''\\); JSON.parse\\(t\\); console.log\\('JSON OK'\\)\")",
-      "Bash(python3)",
-      "Bash(grep -o \".\\\\{0,50\\\\}Guildford.\\\\{0,50\\\\}\" unpackage/dist/dev/mp-weixin/common/main.wxss)",
-      "Bash([ ! -f \"pages/activity/$f.vue\" ])",
-      "Bash(sed -i '' 's|@import/\\\\*  \"@/static/css/guildford.css\"; -- 字体改用系统默认 \\\\*/|/* @import \"@/static/css/guildford.css\"; */|g' pages/reservation/list.vue)",
-      "Bash(sed -i '' \"s|font-family: 'Guildford Pro';|/* font-family: 'Guildford Pro'; */|g\" pages/reservation/list.vue)"
+      "Bash(python3)"
     ]
   }
 }

@@ -45,7 +45,7 @@
 </template>
 
 <script>
-	import zbCode from '../components/zb-code/zb-code.vue'
+	import zbCode from '@/components/zb-code/zb-code.vue'
 	import {
 		getUserInfo,
 		spreadBanner,
@@ -63,7 +63,7 @@
 	// #ifdef MP
 	import authorize from '@/components/Authorize';
 	// #endif
-	import home from '../components/home';
+	import home from '@/components/home';
 	import {
 		TOKENNAME,
 		HTTP_REQUEST_URL

@@ -91,7 +91,7 @@
 		getArticleHotList,
 		getArticleBannerList
 	} from '@/api/api.js';
-	import home from '../components/home';
+	import home from '@/components/home';
 	import colors from "@/mixins/color";
 	import {
 		HTTP_REQUEST_URL

@@ -43,7 +43,7 @@
 		getReplyList,
 		getReplyConfig
 	} from '@/api/store.js';
-	import userEvaluation from '../components/userEvaluation';
+	import userEvaluation from '@/components/userEvaluation';
 	import colors from '@/mixins/color.js';
 	import {
 		HTTP_REQUEST_URL

@@ -80,7 +80,7 @@
 </template>
 
 <script>
-import home from '../components/home';
+import home from '@/components/home';
 import { mapGetters } from 'vuex';
 import { invoiceList, invoiceDelete, getUserInfo } from '@/api/user.js';
 import { orderInvoiceList, getInvoiceLink } from '@/api/order.js';

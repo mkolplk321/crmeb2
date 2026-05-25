@@ -46,7 +46,7 @@
 </template>
 
 <script>
-import commonWrapper from "./commonWrapper.vue";
+import commonWrapper from "@/components/diyComponents/commonWrapper.vue";
 import { getCategoryList } from "@/api/store.js";
 import { getCategoryVersion } from "@/api/api.js";
 export default {

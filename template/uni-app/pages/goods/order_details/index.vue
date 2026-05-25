@@ -565,7 +565,7 @@ import { openOrderRefundSubscribe } from '@/utils/SubscribeMessage.js';
 import { getCustomerType } from '@/api/api.js';
 import { getCustomer } from '@/utils/index.js';
 import { getUserInfo, invoiceList, makeUpinvoice } from '@/api/user.js';
-import home from '../components/home';
+import home from '@/components/home';
 import orderGoods from '../components/orderGoods';
 import ClipboardJS from '@/plugin/clipboard/clipboard.js';
 import { toLogin } from '@/libs/login.js';
@@ -577,7 +577,7 @@ import colors from '@/mixins/color';
 import invoicePicker from '../components/invoicePicker/index.vue';
 import invoiceModal from '../components/invoiceModal/index.vue';
 import giftModal from '../order_pay_status/components/giftModal.vue';
-import zbCode from '../components/zb-code/zb-code.vue';
+import zbCode from '@/components/zb-code/zb-code.vue';
 import { HTTP_REQUEST_URL } from '@/config/app.js';
 import { userShare } from '@/api/user.js';
 export default {

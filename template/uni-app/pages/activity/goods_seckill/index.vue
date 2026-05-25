@@ -70,7 +70,7 @@
 
 <script>
 import { getSeckillIndexTime, getSeckillList } from '../../../api/activity.js';
-import home from '../components/home/index.vue';
+import home from '@/components/home/index.vue';
 import colors from '@/mixins/color.js';
 import { HTTP_REQUEST_URL } from '@/config/app';
 export default {

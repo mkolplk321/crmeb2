@@ -262,11 +262,11 @@
 	} from '@/api/public';
 	import productConSwiper from '../components/productConSwiper';
 	import couponListWindow from '../components/couponListWindow';
-	import productWindow from '../components/productWindow';
-	import userEvaluation from '../components/userEvaluation';
-	import shareRedPackets from '../components/shareRedPackets';
-	import kefuIcon from '../components/kefuIcon';
-	import parser from '../components/jyf-parser/jyf-parser';
+	import productWindow from '@/components/productWindow';
+	import userEvaluation from '@/components/userEvaluation';
+	import shareRedPackets from '@/components/shareRedPackets';
+	import kefuIcon from '@/components/kefuIcon';
+	import parser from '@/components/jyf-parser/jyf-parser';
 	import ClipboardJS from '@/plugin/clipboard/clipboard.js';
 	// #ifdef MP
 	import authorize from '@/components/Authorize';

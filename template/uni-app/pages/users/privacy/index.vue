@@ -5,7 +5,7 @@
 </template>
 
 <script>
-	import parser from "../components/jyf-parser/jyf-parser";
+	import parser from "@/components/jyf-parser/jyf-parser";
 	import {
 		getUserAgreement,
 	} from '@/api/user.js';

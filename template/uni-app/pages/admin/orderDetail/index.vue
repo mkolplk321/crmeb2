@@ -614,7 +614,7 @@
 <script>
 import PriceChange from "../components/PriceChange/index.vue";
 import customForm from "../components/customForm";
-import countDown from "../components/countDown/index.vue";
+import countDown from "@/components/countDown/index.vue";
 // #ifdef MP || APP-PLUS
 import NavBar from "../components/NavBar.vue";
 // #endif
