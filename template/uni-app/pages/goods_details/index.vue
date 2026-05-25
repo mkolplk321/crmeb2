@@ -282,7 +282,7 @@ import couponListWindow from "./components/couponListWindow";
 import productWindow from "@/components/productWindow";
 import shareRedPackets from "@/components/shareRedPackets";
 import kefuIcon from "@/components/kefuIcon";
-import menuIcon from "@/components/menuIcon.vue";
+import menuIcon from "./components/menuIcon.vue";
 import { updateURLParameter } from "@/utils";
 import ClipboardJS from "@/plugin/clipboard/clipboard.js";
 // #ifdef MP
