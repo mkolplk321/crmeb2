@@ -126,7 +126,7 @@ import colors from "@/mixins/color";
 import couponWindow from "@/components/couponWindow/index";
 import { getCouponV2, getCouponNewUser, getCrmebCopyRight } from "@/api/api.js";
 import { getShare } from "@/api/public.js";
-import waterfallsFlow from "@/components/WaterfallsFlow/WaterfallsFlow.vue";
+import waterfallsFlow from "../components/WaterfallsFlow/WaterfallsFlow.vue";
 import emptyPage from "@/components/emptyPage.vue";
 // #ifdef MP
 import { getTempIds } from "@/api/api.js";

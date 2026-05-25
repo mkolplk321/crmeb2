@@ -319,7 +319,7 @@
 </template>
 
 <script>
-import commonWrapper from "@/components/diyComponents/commonWrapper.vue";
+import commonWrapper from "./commonWrapper.vue";
 import countDown from "@/components/countDown";
 import { getSeckillIndexTime, getSeckillList } from "@/api/activity.js";
 export default {

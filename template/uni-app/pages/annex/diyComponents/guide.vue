@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import commonWrapper from "@/components/diyComponents/commonWrapper.vue";
+import commonWrapper from "./commonWrapper.vue";
 export default {
   components: { commonWrapper },
   name: "guide",

@@ -301,7 +301,7 @@
 </template>
 
 <script>
-import commonWrapper from "@/components/diyComponents/commonWrapper.vue";
+import commonWrapper from "./commonWrapper.vue";
 import { openPinkSubscribe } from "@/utils/SubscribeMessage.js";
 import { pink } from "@/api/api.js";
 import { getCombinationList } from "@/api/activity.js";

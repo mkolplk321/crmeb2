@@ -491,7 +491,7 @@ import { getUserInfo } from "@/api/user.js";
 import { TOKENNAME } from "@/config/app.js";
 // #endif
 import colors from "@/mixins/color.js";
-import parser from "@/components/jyf-parser/jyf-parser";
+import parser from "../components/jyf-parser/jyf-parser";
 import cusPreviewImg from "../components/cusPreviewImg/index.vue";
 import menuIcon from "@/components/menuIcon.vue";
 import { sharePoster } from "@/mixins/sharePoster";
