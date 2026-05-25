@@ -101,7 +101,7 @@
 
 <script>
 import commonWrapper from "./commonWrapper.vue";
-import uniNoticeBar from "../components/uniNoticeBar/uni-notice-bar.vue";
+import uniNoticeBar from "@/components/uniNoticeBar/uni-notice-bar.vue";
 export default {
   components: {
     uniNoticeBar,

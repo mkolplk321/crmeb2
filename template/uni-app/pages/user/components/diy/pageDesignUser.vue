@@ -4,37 +4,13 @@
       <view class="index">
         <block v-for="(item, index) in styleConfig" :key="index">
           <view :id="item.id">
-            <userInfor
-              v-if="item.name == 'userInfor'"
-              :dataConfig="item"
-              @changeLogin="changeLogin"
-            ></userInfor>
+            
             <homeUserInfor
-              v-else-if="item.name == 'member'"
+              v-if="item.name == 'member'"
               :dataConfig="item"
               @changeLogin="changeLogin"
             ></homeUserInfor>
-            <newVip
-              v-else-if="item.name == 'newVip'"
-              :dataConfig="item"
-            ></newVip>
-            <articleList
-              v-else-if="item.name == 'articleList'"
-              :dataConfig="item"
-            ></articleList>
-            <blankPage
-              v-else-if="item.name == 'blankPage'"
-              :dataConfig="item"
-            ></blankPage>
-            <coupon
-              v-else-if="item.name == 'coupon'"
-              :dataConfig="item"
-              @changeLogin="changeLogin"
-            ></coupon>
-            <customerService
-              v-else-if="item.name == 'customerService'"
-              :dataConfig="item"
-            ></customerService>
+
             <goodList
               ref="goodLists"
               v-else-if="item.name == 'goodList' || item.name == 'goodRecommend'"
@@ -42,22 +18,7 @@
               :list="goodList"
             ></goodList>
             <menus v-else-if="item.name == 'menus'" :dataConfig="item"></menus>
-            <pictureCube
-              v-else-if="item.name == 'pictureCube'"
-              :dataConfig="item"
-            ></pictureCube>
-            <richText
-              v-else-if="item.name == 'richText'"
-              :dataConfig="item"
-            ></richText>
-            <signIn
-              v-else-if="item.name == 'signIn'"
-              :dataConfig="item"
-            ></signIn>
-            <              v-else-if="item.name == ''"
-              :dataConfig="item"
-              @changeLogin="changeLogin"
-            ></>
+
           </view>
         </block>
 
@@ -94,11 +55,8 @@ import menus from "./menus.vue";
 export default {
   name: "PageDesignUser",
   components: {
-    pageFooter,
-        homeUserInfor,
-                        goodList,
-    menus,
-                  },
+    pageFooter,homeUserInfor,goodList,
+    menus,},
   mixins: [colors],
   props: {
     diyData: { type: Object, default: () => ({}) },
@@ -115,8 +73,7 @@ export default {
     goodList: { type: Array, default: () => [] },
     productVideoStatus: { type: Boolean, default: false },
     belongIndex: { type: Number, default: 0 },
-    errorNetwork: { type: Boolean, default: false },
-    couponList: { type: Array, default: () => [] },
+    errorNetwork: { type: Boolean, default: false },List: { type: Array, default: () => [] },
     activity: { type: Array, default: () => [] },
     attr: { type: Object, default: () => ({}) },
     attrTxt: { type: String, default: "" },
