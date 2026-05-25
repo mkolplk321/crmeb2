@@ -1707,7 +1707,7 @@
 		}
 	],
 	"tabBar": { // 底部菜单（自定义TabBar）
-		"custom": true,
+		
 		"color": "#666666",
 		"selectedColor": "#333333",
 		"borderStyle": "black",

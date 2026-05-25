@@ -165,9 +165,7 @@ components: {
 	},
 	computed: mapGetters(['isLogin']),
 	onShow() {
-			if (typeof this.getTabBar === 'function' && this.getTabBar()) {
-				this.getTabBar().setData({ selected: 2 });
-			}
+			
 		if (this.isLogin) {
 			this.page = 1;
 			this.orderList = [];
