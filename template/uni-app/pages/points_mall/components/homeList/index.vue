@@ -123,6 +123,7 @@
 	</script>
 
 	<style scoped lang="scss">
+@import "@/plugin/animate/animate.min.css";
 	.dialog_nav {
 	  position: absolute;
 	  /* #ifdef MP */

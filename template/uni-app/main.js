@@ -14,13 +14,12 @@ import store from './store'
 import Cache from './utils/cache'
 import util from 'utils/util'
 import configs from './config/app.js'
-import socket from './libs/new_chat.js'
 import i18n from './utils/lang.js';
 Vue.prototype.$util = util;
 Vue.prototype.$config = configs;
 Vue.prototype.$Cache = Cache;
 Vue.prototype.$eventHub = new Vue();
-Vue.prototype.$socket = new socket();
+
 Vue.config.productionTip = false
 import easyLoadimage from '@/components/easy-loadimage/easy-loadimage.vue'
 import BaseDrawer from '@/components/tuiDrawer/tui-drawer.vue'

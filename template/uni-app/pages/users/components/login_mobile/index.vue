@@ -247,6 +247,7 @@
 </script>
 
 <style lang="stylus">
+@import "@/plugin/animate/animate.min.css";
 	.mobile-bg {
 		position: fixed;
 		left: 0;

@@ -1339,6 +1339,7 @@
 </script>
 
 <style scoped lang="scss">
+@import "@/plugin/animate/animate.min.css";
 	.activity_pin {
 		width: auto;
 		height: 44rpx;

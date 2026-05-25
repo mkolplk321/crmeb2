@@ -425,6 +425,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "@/plugin/animate/animate.min.css";
 .footer {
   position: fixed;
   bottom: 0;

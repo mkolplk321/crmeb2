@@ -485,6 +485,7 @@
 </script>
 
 <style lang="scss" scoped>
+@import "@/plugin/animate/animate.min.css";
 	::v-deep uni-checkbox[disabled] .uni-checkbox-input {
 		background-color: #eee;
 	}

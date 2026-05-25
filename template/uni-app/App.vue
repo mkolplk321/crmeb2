@@ -344,8 +344,7 @@ export default {
 </script>
 
 <style>
-@import url("@/plugin/emoji-awesome/css/tuoluojiang.css");
-@import url("@/plugin/animate/animate.min.css");
+@import "@/plugin/emoji-awesome/css/tuoluojiang.css";
 @import "static/css/base.css";
 @import "static/iconfont/iconfont.css";
 /* @import "static/css/guildford.css"; -- 含base64字体60KB，按需在页面中引入 */

@@ -1549,6 +1549,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "@/plugin/animate/animate.min.css";
 .iconfonts {
   color: #fff !important;
   font-size: 28rpx;
