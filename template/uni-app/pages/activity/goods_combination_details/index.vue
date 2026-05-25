@@ -481,7 +481,7 @@ import { toLogin } from "@/libs/login.js";
 import { getCombinationDetail, scombinationCode } from "@/api/activity.js";
 import { postCartAdd, collectAdd, collectDel } from "@/api/store.js";
 import { imageBase64 } from "@/api/public";
-import productWindow from "@/components/productWindow/index.vue";
+import productWindow from "../components/productWindow/index.vue";
 import userEvaluation from "../components/userEvaluation/index.vue";
 import countDown from "../components/countDown/index.vue";
 import kefuIcon from "../components/kefuIcon";

@@ -429,7 +429,7 @@ import { getSeckillDetail, seckillCode } from "@/api/activity.js";
 import { postCartAdd, collectAdd, collectDel } from "@/api/store.js";
 import productConSwiper from "../components/productConSwiper/index.vue";
 import swiperPrevie from "../components/cusPreviewImg/swiperPrevie.vue";
-import productWindow from "@/components/productWindow/index.vue";
+import productWindow from "../components/productWindow/index.vue";
 import userEvaluation from "../components/userEvaluation/index.vue";
 import kefuIcon from "../components/kefuIcon";
 // #ifdef MP

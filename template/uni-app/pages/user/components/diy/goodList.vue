@@ -857,7 +857,7 @@ import { toLogin } from "@/libs/login.js";
 import { mapGetters, mapState } from "vuex";
 import { getCartCounts } from "@/api/order.js";
 import { goShopDetail } from "@/libs/order.js";
-import productWindow from "@/components/productWindow";
+import productWindow from "./productWindow";
 import commonWrapper from "./commonWrapper.vue";
 import { HTTP_REQUEST_URL } from "@/config/app";
 export default {

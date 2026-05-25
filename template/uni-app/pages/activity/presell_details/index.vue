@@ -262,7 +262,7 @@
 	} from '@/api/public';
 	import productConSwiper from '../components/productConSwiper';
 	import couponListWindow from '../components/couponListWindow';
-	import productWindow from '@/components/productWindow';
+	import productWindow from '../components/productWindow';
 	import userEvaluation from '../components/userEvaluation';
 	import shareRedPackets from '../components/shareRedPackets';
 	import kefuIcon from '../components/kefuIcon';

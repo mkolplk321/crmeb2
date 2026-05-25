@@ -279,7 +279,7 @@ import { mapGetters } from "vuex";
 import cusPreviewImg from "./components/cusPreviewImg/index.vue";
 import swiperPrevie from "./components/cusPreviewImg/swiperPrevie.vue";
 import couponListWindow from "./components/couponListWindow";
-import productWindow from "@/components/productWindow";
+import productWindow from "./components/productWindow";
 import shareRedPackets from "./components/shareRedPackets";
 import kefuIcon from "./components/kefuIcon";
 import menuIcon from "./components/menuIcon.vue";
