@@ -145,6 +145,15 @@ export default {
 				});
 		},
 		setUserInfo(e) {
+			// 检查用户是否取消授权
+			if (e.detail.errMsg !== 'getPhoneNumber:ok') {
+				uni.showToast({
+					title: '您取消了授权',
+					icon: 'none',
+					duration: 2000
+				});
+				return;
+			}
 			uni.showLoading({ title: '正在登录中' });
 			Routine.getCode()
 				.then(code => {

@@ -1,5 +1,5 @@
 <template>
-  <view class="product-intro" v-if="productData.description">
+  <view class="product-intro" v-if="description">
     <common-wrapper :config="dataConfig">
       <view class="title" v-if="titleShow" :style="[titleStyle]">{{
         $t(`产品介绍`)
@@ -7,13 +7,13 @@
       <view class="conter">
         <!-- #ifndef APP-PLUS -->
         <parser
-          :html="productData.description"
+          :html="description"
           ref="article"
           :tag-style="tagStyle"
         ></parser>
         <!-- #endif -->
         <!-- #ifdef APP-PLUS -->
-        <view class="description" v-html="productData.description"></view>
+        <view class="description" v-html="description"></view>
         <!-- #endif -->
       </view>
     </common-wrapper>
@@ -21,6 +21,7 @@
 </template>
 
 <script>
+import { HTTP_REQUEST_URL } from "../../../config/app";
 import commonWrapper from "./commonWrapper.vue";
 import parser from "../components/jyf-parser/jyf-parser";
 
@@ -41,6 +42,9 @@ export default {
     },
   },
   computed: {
+	description() {
+		return this.productData.description?.replace(`src="/uploads`, `src="${HTTP_REQUEST_URL}/uploads`)?.replace(`src='/uploads`, `src='{HTTP_REQUEST_URL}/uploads`)
+	},
     titleShow() {
       return this.dataConfig.isShow?.tabVal == 0;
     },

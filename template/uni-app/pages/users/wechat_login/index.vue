@@ -406,6 +406,15 @@ export default {
         });
         return;
       }
+      // 检查用户是否取消授权
+      if (e.detail.errMsg !== 'getPhoneNumber:ok') {
+        uni.showToast({
+          title: this.$t('您取消了授权'),
+          icon: 'none',
+          duration: 2000
+        });
+        return;
+      }
       uni.showLoading({
         title: this.$t(`正在登录中`),
       });
