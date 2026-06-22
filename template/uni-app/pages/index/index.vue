@@ -3,7 +3,7 @@
   <view class="page" :style="{ minHeight: windowHeight + 'px' }">
     <!-- 全屏背景图（延伸到页面底部，底部渐变为白色） -->
     <view class="full-bg-wrap" :style="{ paddingTop: statusBarHeight + 'px' }">
-      <image class="full-bg-img" src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/banner-bg.jpg" mode="aspectFill"></image>
+      <image class="full-bg-img" src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260608181331_40_4592.jpg" mode="aspectFill"></image>
       <view class="full-fade"></view>
     </view>
 
@@ -45,10 +45,10 @@
         <!-- 底部品牌区域 -->
         <view class="footer-section">
           <view class="brand-logo">
-            <image class="logo-image" src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/brand-logo.jpg" mode="aspectFit"></image>
+            <image class="logo-image" src="https://goyoto.oss-cn-beijing.aliyuncs.com/images/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260608175150_21_4592.png" mode="aspectFit"></image>
           </view>
-          <view class="brand-name">闪电自行车 Club</view>
-          <view class="copyright">© 2026 闪电自行车 Club All Rights Reserved</view>
+<!--          <view class="brand-name">闪电自行车 Club</view>
+          <view class="copyright">© 2026 闪电自行车 Club All Rights Reserved</view> -->
         </view>
       </view>
 
@@ -111,42 +111,42 @@ export default {
         {
           name: "服务预约",
           sub: "预约骑行 We服务",
-          image: "https://goyoto.oss-cn-beijing.aliyuncs.com/images/icon-reservation.jpg",
+          image: "https://goyoto.oss-cn-beijing.aliyuncs.com/images/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260606113411_73_98.jpg",
           url: "/pages/goods_details/index?id=11",
           type: "navigateTo",
         },
         {
           name: "RETUL FIT",
           sub: "Fitting 服务预约",
-          image: "https://goyoto.oss-cn-beijing.aliyuncs.com/images/icon-fit.jpg",
+          image: "https://goyoto.oss-cn-beijing.aliyuncs.com/images/RETUL.jpg",
           url: "/pages/goods_details/index?id=14",
           type: "navigateTo",
         },
         {
           name: "试骑体验",
           sub: "Demo Bike",
-          image: "https://goyoto.oss-cn-beijing.aliyuncs.com/images/icon-test.jpg",
+          image: "https://goyoto.oss-cn-beijing.aliyuncs.com/images/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260606113310_71_98.jpg",
           url: "/pages/goods_details/index?id=17",
           type: "navigateTo",
         },
         {
           name: "门店服务",
           sub: "Store Service",
-          image: "https://goyoto.oss-cn-beijing.aliyuncs.com/images/icon-store.jpg",
+          image: "https://goyoto.oss-cn-beijing.aliyuncs.com/images/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260606112603_68_98.jpg",
           url: "/pages/annex/special/index?theme_id=5",
           type: "navigateTo",
         },
         {
-          name: "闪电周边",
+          name: "俱乐部周边",
           sub: "The Cyclist Club",
-          image: "https://goyoto.oss-cn-beijing.aliyuncs.com/images/icon-goods.jpg",
+          image: "https://goyoto.oss-cn-beijing.aliyuncs.com/images/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260606105133_4975_16.jpg",
           url: "/pages/goods_details/index?id=12",
           type: "navigateTo",
         },
         {
           name: "关于我们",
           sub: "About Us...",
-          image: "https://goyoto.oss-cn-beijing.aliyuncs.com/images/icon-about.jpg",
+          image: "https://goyoto.oss-cn-beijing.aliyuncs.com/images/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260606105907_4983_16.jpg",
           url: "/pages/annex/special/index?theme_id=17",
           type: "navigateTo",
         },
@@ -485,6 +485,10 @@ export default {
 
 .activity-card {
   width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
   border-radius: 16rpx;
   overflow: hidden;
   padding: 36rpx 24rpx;
@@ -516,6 +520,7 @@ export default {
 }
 
 .activity-card-desc {
+  flex: 1;
   font-size: 22rpx;
   color: rgba(255,255,255,0.6);
   display: block;
@@ -605,8 +610,8 @@ export default {
 }
 
 .logo-image {
-  width: 160rpx;
-  height: 80rpx;
+  width: 320rpx;
+  height: 160rpx;
 }
 
 .brand-name {
