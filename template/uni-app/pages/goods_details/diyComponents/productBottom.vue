@@ -184,7 +184,7 @@
                 form-type="submit"
                 :style="buyBtnStyle"
               >
-                {{ $t(`立即购买`) }}
+                {{ $t(`立即报名`) }}
               </button>
             </form>
           </view>
