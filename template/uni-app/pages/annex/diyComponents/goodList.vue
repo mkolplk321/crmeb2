@@ -84,7 +84,7 @@
                     class="w-96 h-56 rd-28rpx flex-center fs-24 text--w111-fff"
                     v-if="btnStyle == 0"
                     :style="[btnBgColor]"
-                    >{{ $t(`购买`) }}</view
+                    >{{ $t(`报名`) }}</view
                   >
                   <view
                     class="rd-24rpx w-44 h-44"
@@ -156,7 +156,7 @@
                       class="w-96 h-56 rd-28rpx flex-center fs-24 text--w111-fff"
                       v-if="btnStyle == 0"
                       :style="[btnBgColor]"
-                      >{{ $t(`购买`) }}</view
+                      >{{ $t(`报名`) }}</view
                     >
                     <view
                       class="rd-24rpx w-44 h-44"
@@ -662,7 +662,7 @@
                     class="w-96 h-56 rd-28rpx flex-center fs-24 text--w111-fff"
                     v-if="btnStyle == 0"
                     :style="[btnBgColor]"
-                    >{{ $t(`购买`) }}</view
+                    >{{ $t(`报名`) }}</view
                   >
                   <view
                     class="rd-24rpx w-44 h-44"
@@ -730,7 +730,7 @@
                       class="w-96 h-56 rd-28rpx flex-center fs-24 text--w111-fff"
                       v-if="btnStyle == 0"
                       :style="[btnBgColor]"
-                      >{{ $t(`购买`) }}</view
+                      >{{ $t(`报名`) }}</view
                     >
                     <view
                       class="rd-24rpx w-44 h-44"
